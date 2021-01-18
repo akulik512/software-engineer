@@ -1,0 +1,31 @@
+package strategy;
+
+import com.akulik.designpatterns.strategy.Duck;
+import com.akulik.designpatterns.strategy.MallardDuck;
+import com.akulik.designpatterns.strategy.fly.FlyNoWay;
+import com.akulik.designpatterns.strategy.fly.FlyWithWings;
+import com.akulik.designpatterns.strategy.quack.Quack;
+import com.akulik.designpatterns.strategy.quack.Squeak;
+import org.junit.jupiter.api.Test;
+
+class StrategyTest {
+
+    @Test
+    void test() {
+        Duck mallard = new MallardDuck();
+        mallard.setFlyBehavior(new FlyWithWings());
+        mallard.setQuackBehavior(new Squeak());
+
+        mallard.performFly();
+        mallard.performQuack();
+        mallard.display();
+
+        System.out.println("------------");
+
+        mallard.setFlyBehavior(new FlyNoWay());
+        mallard.setQuackBehavior(new Quack());
+
+        mallard.performFly();
+        mallard.performQuack();
+    }
+}
