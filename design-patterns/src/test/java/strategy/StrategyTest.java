@@ -6,12 +6,14 @@ import com.akulik.designpatterns.strategy.fly.FlyNoWay;
 import com.akulik.designpatterns.strategy.fly.FlyWithWings;
 import com.akulik.designpatterns.strategy.quack.Quack;
 import com.akulik.designpatterns.strategy.quack.Squeak;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("Strategy")
 class StrategyTest {
 
     @Test
-    void test() {
+    void example() {
         Duck mallard = new MallardDuck();
         mallard.setFlyBehavior(new FlyWithWings());
         mallard.setQuackBehavior(new Squeak());

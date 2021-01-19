@@ -2,12 +2,14 @@ package factory.factory;
 
 import com.akulik.designpatterns.factory.factory.PizzaStore;
 import com.akulik.designpatterns.factory.factory.SimplePizzaFactory;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("Factory")
 class FactoryTest {
 
     @Test
-    void preparePizza() {
+    void example() {
         PizzaStore pizzaStore = new PizzaStore(new SimplePizzaFactory());
 
         System.out.println("--- Order 1 ---");
