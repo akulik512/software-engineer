@@ -1,6 +1,6 @@
 package com.akulik.designpatterns.factory.abstractfactory;
 
-import com.akulik.designpatterns.factory.abstractfactory.region.PizzaIngredientFactory;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.PizzaIngredientFactory;
 
 public class ClamPizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;

@@ -1,8 +1,8 @@
 package com.akulik.designpatterns.factory.abstractfactory.client;
 
 import com.akulik.designpatterns.factory.abstractfactory.*;
-import com.akulik.designpatterns.factory.abstractfactory.region.ChicagoPizzaIngredientFactory;
-import com.akulik.designpatterns.factory.abstractfactory.region.PizzaIngredientFactory;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.ChicagoPizzaIngredientFactory;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.PizzaIngredientFactory;
 
 public class ChicagoPizzaStore extends PizzaStore {
     public Pizza createPizza(String item) {
