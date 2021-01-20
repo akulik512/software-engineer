@@ -18,9 +18,10 @@ class StrategyTest {
         mallard.setFlyBehavior(new FlyWithWings());
         mallard.setQuackBehavior(new Squeak());
 
+        mallard.display();
+
         mallard.performFly();
         mallard.performQuack();
-        mallard.display();
 
         System.out.println("------------");
 
