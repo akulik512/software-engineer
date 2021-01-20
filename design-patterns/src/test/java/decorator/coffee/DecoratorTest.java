@@ -1,12 +1,14 @@
 package decorator.coffee;
 
 import com.akulik.designpatterns.decorator.coffee.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("Decorator example 1")
 class DecoratorTest {
 
     @Test
-    void test() {
+    void example() {
         // Make coffee
         Beverage beverage = new Espresso();
         System.out.println(beverage.getDescription() + " $ " + beverage.cost());

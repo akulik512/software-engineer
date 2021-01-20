@@ -1,14 +1,16 @@
 package singleton.doublecheckedlocking;
 
 import com.akulik.designpatterns.singleton.doublecheckedlocking.DoubleCheckedLocking;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 
+@DisplayName("Singleton Double Checked Locking")
 class DoubleCheckedLockingTest {
 
     @Test
-    void testDoubleCheckedLocking() {
+    void example() {
         final int start;
         final int finish;
 

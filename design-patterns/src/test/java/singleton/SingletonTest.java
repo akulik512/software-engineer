@@ -1,14 +1,16 @@
 package singleton;
 
 import com.akulik.designpatterns.singleton.Singleton;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 
+@DisplayName("Singleton")
 class SingletonTest  {
 
     @Test
-    void testSingleton() {
+    void example() {
         final int start;
         final int finish;
 

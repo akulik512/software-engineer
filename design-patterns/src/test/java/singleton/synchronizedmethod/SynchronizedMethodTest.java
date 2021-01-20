@@ -1,14 +1,16 @@
 package singleton.synchronizedmethod;
 
 import com.akulik.designpatterns.singleton.synchronizedmethod.SynchronizedMethod;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 
+@DisplayName("Singleton Synchronized Method")
 class SynchronizedMethodTest {
 
     @Test
-    void testSingletonSynchronizedMethod() {
+    void example() {
         final int start;
         final int finish;
 
