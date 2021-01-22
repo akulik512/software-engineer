@@ -1,5 +1,9 @@
-package com.akulik.designpatterns.command;
+package com.akulik.designpatterns.command.command;
 
+import com.akulik.designpatterns.command.command.action.GarageDoorOpenCommand;
+import com.akulik.designpatterns.command.command.action.LightOnCommand;
+import com.akulik.designpatterns.command.command.entity.GarageDoor;
+import com.akulik.designpatterns.command.command.entity.Light;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

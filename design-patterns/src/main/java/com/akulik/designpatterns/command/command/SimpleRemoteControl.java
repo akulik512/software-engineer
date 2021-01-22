@@ -1,4 +1,6 @@
-package com.akulik.designpatterns.command;
+package com.akulik.designpatterns.command.command;
+
+import com.akulik.designpatterns.command.command.action.Command;
 
 public class SimpleRemoteControl {
     Command slot;

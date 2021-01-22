@@ -1,4 +1,4 @@
-package com.akulik.designpatterns.command;
+package com.akulik.designpatterns.command.command.entity;
 
 public class GarageDoor {
     public void up() {

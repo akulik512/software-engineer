@@ -1,4 +1,6 @@
-package com.akulik.designpatterns.command;
+package com.akulik.designpatterns.command.command.action;
+
+import com.akulik.designpatterns.command.command.entity.Light;
 
 public class LightOnCommand implements Command {
 
