@@ -1,0 +1,15 @@
+### Design Patterns
+- Strategy
+- Decorator
+- Observer
+- Factory
+  - Factory
+  - Factory Method
+  - Abstract Factory  
+- Singleton
+  - Singleton
+  - Synchronized Method
+  - Double Checked Locking
+- Command
+  - Command
+  - Macro Command
