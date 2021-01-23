@@ -1,7 +1,5 @@
-package strategy;
+package com.akulik.designpatterns.strategy;
 
-import com.akulik.designpatterns.strategy.Duck;
-import com.akulik.designpatterns.strategy.MallardDuck;
 import com.akulik.designpatterns.strategy.fly.FlyNoWay;
 import com.akulik.designpatterns.strategy.fly.FlyWithWings;
 import com.akulik.designpatterns.strategy.quack.Quack;

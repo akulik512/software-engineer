@@ -1,5 +1,6 @@
-package com.akulik.designpatterns.command.command;
+package com.akulik.designpatterns.command;
 
+import com.akulik.designpatterns.command.command.SimpleRemoteControl;
 import com.akulik.designpatterns.command.command.action.GarageDoorOpenCommand;
 import com.akulik.designpatterns.command.command.action.LightOnCommand;
 import com.akulik.designpatterns.command.command.entity.GarageDoor;

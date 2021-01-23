@@ -1,6 +1,5 @@
-package singleton.doublecheckedlocking;
+package com.akulik.designpatterns.singleton.doublecheckedlocking;
 
-import com.akulik.designpatterns.singleton.doublecheckedlocking.DoubleCheckedLocking;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

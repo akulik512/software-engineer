@@ -1,6 +1,5 @@
-package singleton.synchronizedmethod;
+package com.akulik.designpatterns.singleton.synchronizedmethod;
 
-import com.akulik.designpatterns.singleton.synchronizedmethod.SynchronizedMethod;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

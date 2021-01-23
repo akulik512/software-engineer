@@ -1,8 +1,5 @@
-package decorator.encrypt;
+package com.akulik.designpatterns.decorator.encrypt;
 
-import com.akulik.designpatterns.decorator.encrypt.DataSourceDecorator;
-import com.akulik.designpatterns.decorator.encrypt.EncryptionDecorator;
-import com.akulik.designpatterns.decorator.encrypt.PublishDataSource;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -1,7 +1,5 @@
-package factory.factory;
+package com.akulik.designpatterns.factory.factory;
 
-import com.akulik.designpatterns.factory.factory.PizzaStore;
-import com.akulik.designpatterns.factory.factory.SimplePizzaFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

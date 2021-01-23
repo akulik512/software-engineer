@@ -1,7 +1,5 @@
-package observer;
+package com.akulik.designpatterns.observer;
 
-import com.akulik.designpatterns.observer.CurrentConditionsDisplay;
-import com.akulik.designpatterns.observer.WeatherData;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

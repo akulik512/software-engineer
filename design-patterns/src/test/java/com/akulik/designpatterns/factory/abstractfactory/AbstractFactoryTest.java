@@ -1,6 +1,5 @@
-package factory.abstractfactory;
+package com.akulik.designpatterns.factory.abstractfactory;
 
-import com.akulik.designpatterns.factory.abstractfactory.Pizza;
 import com.akulik.designpatterns.factory.abstractfactory.client.ChicagoPizzaStore;
 import com.akulik.designpatterns.factory.abstractfactory.client.NYPizzaStore;
 import com.akulik.designpatterns.factory.abstractfactory.client.PizzaStore;

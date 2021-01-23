@@ -1,6 +1,5 @@
-package decorator.coffee;
+package com.akulik.designpatterns.decorator.coffee;
 
-import com.akulik.designpatterns.decorator.coffee.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

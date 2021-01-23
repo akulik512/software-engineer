@@ -1,4 +1,4 @@
-package factory.factorymethod;
+package com.akulik.designpatterns.factory.factorymethod;
 
 import com.akulik.designpatterns.factory.factorymethod.store.ChicagoPizzaStore;
 import com.akulik.designpatterns.factory.factorymethod.store.NYPizzaStore;

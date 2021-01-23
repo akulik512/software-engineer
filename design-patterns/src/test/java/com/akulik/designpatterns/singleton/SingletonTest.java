@@ -1,6 +1,5 @@
-package singleton;
+package com.akulik.designpatterns.singleton;
 
-import com.akulik.designpatterns.singleton.Singleton;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
