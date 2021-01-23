@@ -1,15 +1,15 @@
 ### Design Patterns
-- Strategy
-- Decorator
-- Observer
+- Strategy [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/strategy) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/strategy) 
+- Decorator [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/decorator) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/decorator)
+- Observer [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/observer) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/observer)
 - Factory
-  - Factory
-  - Factory Method
-  - Abstract Factory  
+  - Factory [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/factory/factory) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/factory/factory)
+  - Factory Method [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/factory/factorymethod) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/factory/factorymethod)
+  - Abstract Factory  [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/factory/abstractfactory) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/factory/abstractfactory)
 - Singleton
-  - Singleton
-  - Synchronized Method
-  - Double Checked Locking
+  - Singleton [code](https://github.com/akulik512/software-engineer/blob/master/design-patterns/src/main/java/com/akulik/designpatterns/singleton/Singleton.java) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/singleton)
+  - Synchronized Method [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/singleton/synchronizedmethod) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/singleton/synchronizedmethod)
+  - Double Checked Locking [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/singleton/doublecheckedlocking) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/singleton/doublecheckedlocking)
 - Command
-  - Command
-  - Macro Command
+  - Command [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/command/command) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/command)
+  - Macro Command [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/command/macrocommand) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/command)
