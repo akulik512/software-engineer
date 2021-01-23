@@ -14,4 +14,5 @@ public class FountainOn implements Command {
     public void execute() {
         fountain.on();
     }
+
 }

@@ -14,4 +14,5 @@ public class FountainOff implements Command {
     public void execute() {
         fountain.off();
     }
+
 }

@@ -14,4 +14,5 @@ public class JacuzziOn implements Command {
     public void execute() {
         jacuzzi.on();
     }
+
 }

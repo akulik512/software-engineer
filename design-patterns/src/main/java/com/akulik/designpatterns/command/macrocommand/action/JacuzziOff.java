@@ -14,4 +14,5 @@ public class JacuzziOff implements Command {
     public void execute() {
         jacuzzi.off();
     }
+
 }

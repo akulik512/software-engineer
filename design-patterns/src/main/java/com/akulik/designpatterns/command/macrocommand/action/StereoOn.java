@@ -14,4 +14,5 @@ public class StereoOn implements Command {
     public void execute() {
         stereo.on();
     }
+
 }

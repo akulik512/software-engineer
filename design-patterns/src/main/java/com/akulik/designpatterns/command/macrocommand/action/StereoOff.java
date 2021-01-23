@@ -14,4 +14,5 @@ public class StereoOff implements Command {
     public void execute() {
         stereo.off();
     }
+
 }
