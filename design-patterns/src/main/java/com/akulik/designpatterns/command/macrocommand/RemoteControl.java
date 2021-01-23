@@ -6,6 +6,7 @@ import com.akulik.designpatterns.command.macrocommand.action.NoCommand;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+// Invoker
 public class RemoteControl {
     private final Command[] onCommands;
     private final Command[] offCommands;
