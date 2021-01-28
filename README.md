@@ -13,3 +13,5 @@
 - Command
   - Command [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/command/command) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/command)
   - Macro Command [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/command/macrocommand) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/command)
+- Adapter [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/adapter) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/adapter)
+- Facade [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/facade) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/facade)
