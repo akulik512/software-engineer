@@ -8,7 +8,6 @@ class TemplateMethodTest {
 
     @Test
     void example() {
-
         System.out.println("Let's make some tea:");
         final Tea tea = new Tea();
         tea.prepareRecipe();
