@@ -1,9 +1,11 @@
-package com.akulik.designpatterns.iterator;
+package com.akulik.designpatterns.iterator.iterator;
+
+import com.akulik.designpatterns.iterator.menu.MenuItem;
 
 public class DinerMenuIterator implements Iterator {
 
-    MenuItem[] items;
-    int position = 0;
+    private final MenuItem[] items;
+    private int position = 0;
 
     public DinerMenuIterator(MenuItem[] items) {
         this.items = items;
@@ -11,11 +13,7 @@ public class DinerMenuIterator implements Iterator {
 
     @Override
     public boolean hasNext() {
-        if (position >= items.length || items[position] == null) {
-            return false;
-        } else {
-            return true;
-        }
+        return position < items.length && items[position] != null;
     }
 
     @Override

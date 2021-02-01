@@ -1,12 +1,15 @@
-package com.akulik.designpatterns.iterator;
+package com.akulik.designpatterns.iterator.menu;
+
+import com.akulik.designpatterns.iterator.iterator.Iterator;
+import com.akulik.designpatterns.iterator.iterator.LunchMenuIterator;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenu {
+public class LunchMenu {
 
-    ArrayList<MenuItem> menuItems;
+    private final ArrayList<MenuItem> menuItems;
 
-    public PancakeHouseMenu() {
+    public LunchMenu() {
         menuItems = new ArrayList<>();
 
         addItem("K&B’s Pancake Breakfast", "Pancakes with scrambled eggs, and toast",
@@ -28,7 +31,8 @@ public class PancakeHouseMenu {
         menuItems.add(menuItem);
     }
 
-    public ArrayList<MenuItem> getMenuItems() {
-        return menuItems;
+    public Iterator createIterator() {
+        return new LunchMenuIterator(menuItems);
     }
+
 }
