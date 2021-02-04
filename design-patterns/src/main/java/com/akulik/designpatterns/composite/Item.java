@@ -1,6 +1,8 @@
 package com.akulik.designpatterns.composite;
 
-public class Item {
+import com.akulik.designpatterns.composite.menu.MenuComponent;
+
+public class Item extends MenuComponent {
 
     private final String name;
     private final String description;
@@ -29,4 +31,14 @@ public class Item {
     public double getPrice() {
         return price;
     }
+
+    public void print() {
+        System.out.print(" " + getName());
+        if (isVegetarian()) {
+            System.out.print("(v)");
+        }
+        System.out.println(", " + getPrice());
+        System.out.println("    -- " + getDescription());
+    }
+    
 }
