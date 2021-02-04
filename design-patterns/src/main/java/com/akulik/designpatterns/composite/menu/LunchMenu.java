@@ -1,13 +1,17 @@
 package com.akulik.designpatterns.composite.menu;
 
+import com.akulik.designpatterns.composite.Item;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class LunchMenu implements Menu {
 
     private final ArrayList<Item> items;
+    private final String menuName;
 
-    public LunchMenu() {
+    public LunchMenu(final String menuName) {
+        this.menuName = menuName;
         items = new ArrayList<>();
 
         addItem("K&B’s Pancake Breakfast", "Pancakes with scrambled eggs, and toast",
@@ -31,4 +35,8 @@ public class LunchMenu implements Menu {
         return items.iterator();
     }
 
+    @Override
+    public String getName() {
+        return menuName;
+    }
 }

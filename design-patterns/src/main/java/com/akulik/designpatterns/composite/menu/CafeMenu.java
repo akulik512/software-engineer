@@ -1,12 +1,17 @@
 package com.akulik.designpatterns.composite.menu;
 
+import com.akulik.designpatterns.composite.Item;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class CafeMenu implements Menu {
-    private final ArrayList<Item> items;
 
-    public CafeMenu() {
+    private final ArrayList<Item> items;
+    private final String menuName;
+
+    public CafeMenu(final String menuName) {
+        this.menuName = menuName;
         items = new ArrayList<>();
 
         addItem("Veggie Burger and Air Fries", "Veggie burger on a whole wheat bun, lettuce, tomato, and fries",
@@ -26,6 +31,11 @@ public class CafeMenu implements Menu {
     @Override
     public Iterator<Item> createIterator() {
         return items.iterator();
+    }
+
+    @Override
+    public String getName() {
+        return menuName;
     }
 
 }

@@ -1,32 +1,23 @@
 package com.akulik.designpatterns.composite;
 
-import com.akulik.designpatterns.composite.menu.Item;
 import com.akulik.designpatterns.composite.menu.Menu;
 
 import java.util.Iterator;
+import java.util.List;
 
 public class Waitress {
 
-    Menu lunchMenu;
-    Menu dinerMenu;
-    Menu cafeMenu;
+    List<Menu> menuList;
 
-    public Waitress(Menu lunchMenu, Menu dinerMenu, Menu cafeMenu) {
-        this.lunchMenu = lunchMenu;
-        this.dinerMenu = dinerMenu;
-        this.cafeMenu = cafeMenu;
+    public Waitress(List<Menu> menuList) {
+        this.menuList = menuList;
     }
 
     public void printMenu() {
-        Iterator<Item> lunchIterator = lunchMenu.createIterator();
-        Iterator<Item> dinerIterator = dinerMenu.createIterator();
-        Iterator<Item> cafeIterator = cafeMenu.createIterator();
-        System.out.println("Menu\n\nBreakfast:");
-        printMenu(lunchIterator);
-        System.out.println("\nLunch:");
-        printMenu(dinerIterator);
-        System.out.println("\nDinner");
-        printMenu(cafeIterator);
+        for (Menu menu : menuList) {
+            System.out.println(menu.getName());
+            printMenu(menu.createIterator());
+        }
     }
 
     private void printMenu(Iterator<Item> iterator) {
