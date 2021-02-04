@@ -1,7 +1,5 @@
 package com.akulik.designpatterns.composite;
 
-import com.akulik.designpatterns.composite.menu.MenuComponent;
-
 public class Waitress {
 
     MenuComponent allMenus;

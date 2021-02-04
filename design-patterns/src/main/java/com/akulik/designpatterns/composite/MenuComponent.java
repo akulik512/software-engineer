@@ -1,4 +1,4 @@
-package com.akulik.designpatterns.composite.menu;
+package com.akulik.designpatterns.composite;
 
 public abstract class MenuComponent {
 

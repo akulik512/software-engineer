@@ -1,32 +1,32 @@
-package com.akulik.designpatterns.composite.menu;
+package com.akulik.designpatterns.composite;
 
 import java.util.ArrayList;
 
-public class MenuNode extends MenuComponent {
+public class Menu extends MenuComponent {
 
-    ArrayList<MenuComponent> menuComponentList = new ArrayList<>();
+    ArrayList<MenuComponent> menuComponents = new ArrayList<>();
 
     private final String name;
     private final String description;
 
-    public MenuNode(String name, String description) {
+    public Menu(String name, String description) {
         this.name = name;
         this.description = description;
     }
 
     @Override
     public void add(MenuComponent menuComponent) {
-        menuComponentList.add(menuComponent);
+        menuComponents.add(menuComponent);
     }
 
     @Override
     public void remove(MenuComponent menuComponent) {
-        menuComponentList.remove(menuComponent);
+        menuComponents.remove(menuComponent);
     }
 
     @Override
     public MenuComponent getChild(int i) {
-        return menuComponentList.get(i);
+        return menuComponents.get(i);
     }
 
     @Override
@@ -45,8 +45,8 @@ public class MenuNode extends MenuComponent {
         System.out.println(", " + getDescription());
         System.out.println("---------------------");
 
-        for (MenuComponent component : menuComponentList) {
-            component.print();
+        for (MenuComponent menuComponent : menuComponents) {
+            menuComponent.print();
         }
     }
 }
