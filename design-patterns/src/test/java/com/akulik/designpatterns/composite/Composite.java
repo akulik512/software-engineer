@@ -10,12 +10,8 @@ class Composite {
     void example() {
         final MenuComponent pancakeHouseMenu = given_pancakeMenu();
         final MenuComponent cafeMenu = given_cafeMenu();
-
         final MenuComponent dinerMenu = given_dinerMenu();
-        final MenuComponent dessertMenu = given_dessertMenu();
-        dinerMenu.add(dessertMenu);
-
-        MenuComponent masterMenus = given_masterMenu(pancakeHouseMenu, dinerMenu, cafeMenu);
+        final MenuComponent masterMenus = given_masterMenu(pancakeHouseMenu, dinerMenu, cafeMenu);
 
         Waitress waitress = new Waitress(masterMenus);
         waitress.printMenu();
@@ -58,18 +54,11 @@ class Composite {
                 true,3.89));
         dinerMenu.add(new MenuItem("Pasta", "Steamed vegetables over brown rice",
                 false,3.99));
-        return dinerMenu;
-    }
 
-    private MenuComponent given_cafeMenu() {
-        final MenuComponent cafeMenu = new Menu("CAFE MENU", "Dinner");
-        cafeMenu.add(new MenuItem("Veggie Burger and Air Fries", "Veggie burger on a whole wheat bun, lettuce, tomato, and fries",
-                true, 3.99));
-        cafeMenu.add(new MenuItem("Soup of the day", "A cup of the soup of the day, with a side salad",
-                false, 3.69));
-        cafeMenu.add(new MenuItem("Burrito", "A large burrito, with whole pinto beans, salsa, guacamole",
-                true, 4.29));
-        return cafeMenu;
+        final MenuComponent dessertMenu = given_dessertMenu();
+        dinerMenu.add(dessertMenu);
+
+        return dinerMenu;
     }
 
     private MenuComponent given_dessertMenu() {
@@ -81,5 +70,16 @@ class Composite {
         dessertMenu.add(new MenuItem("Sorbet", "A scoop of raspberry and a scoop of lime",
                 true, 1.89));
         return dessertMenu;
+    }
+
+    private MenuComponent given_cafeMenu() {
+        final MenuComponent cafeMenu = new Menu("CAFE MENU", "Dinner");
+        cafeMenu.add(new MenuItem("Veggie Burger and Air Fries", "Veggie burger on a whole wheat bun, lettuce, tomato, and fries",
+                true, 3.99));
+        cafeMenu.add(new MenuItem("Soup of the day", "A cup of the soup of the day, with a side salad",
+                false, 3.69));
+        cafeMenu.add(new MenuItem("Burrito", "A large burrito, with whole pinto beans, salsa, guacamole",
+                true, 4.29));
+        return cafeMenu;
     }
 }
