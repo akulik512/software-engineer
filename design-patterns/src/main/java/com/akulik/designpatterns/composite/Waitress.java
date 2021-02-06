@@ -2,7 +2,7 @@ package com.akulik.designpatterns.composite;
 
 public class Waitress {
 
-    MenuComponent allMenus;
+    private final MenuComponent allMenus;
 
     public Waitress(MenuComponent allMenus) {
         this.allMenus = allMenus;

@@ -39,7 +39,7 @@ class Composite {
     }
 
     private MenuComponent given_dinerMenu() {
-        final MenuComponent dinerMenu = new Menu("PDINER MENU", "Lunch");
+        final MenuComponent dinerMenu = new Menu("DINER MENU", "Lunch");
         dinerMenu.add(new MenuItem("Vegetarian BLT", "(Fakin’) Bacon with lettuce & tomato on whole wheat",
                 true, 2.99));
         dinerMenu.add(new MenuItem("BLT", "Bacon with lettuce & tomato on whole wheat",
