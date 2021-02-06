@@ -4,13 +4,13 @@ import com.akulik.designpatterns.state.state.*;
 
 public class GumballMachine {
 
-    State soldOutState;
-    State noQuarterState;
-    State hasQuarterState;
-    State soldState;
+    private final State soldOutState;
+    private final State noQuarterState;
+    private final State hasQuarterState;
+    private final State soldState;
 
-    State state;
-    int countOfGumballs;
+    private State state;
+    private int countOfGumballs;
 
     public GumballMachine(int numberGumballs) {
         soldOutState = new SoldOutState(this);
@@ -67,5 +67,13 @@ public class GumballMachine {
 
     public int getCountOfGumballs() {
         return countOfGumballs;
+    }
+
+    @Override
+    public String toString() {
+        return "GumballMachine{" +
+                "state=" + state.getClass().getSimpleName() +
+                ", countOfGumballs=" + countOfGumballs +
+                '}';
     }
 }
