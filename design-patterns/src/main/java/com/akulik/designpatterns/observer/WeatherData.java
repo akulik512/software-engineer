@@ -4,14 +4,11 @@ import java.util.ArrayList;
 
 public class WeatherData implements Observable {
 
-    private final ArrayList<Observer> observers;
+    private final ArrayList<Observer> observers = new ArrayList<>();
+
     private float temp;
     private float humidity;
     private float pressure;
-
-    public WeatherData() {
-        observers = new ArrayList<>();
-    }
 
     @Override
     public void registerObserver(Observer o) {
