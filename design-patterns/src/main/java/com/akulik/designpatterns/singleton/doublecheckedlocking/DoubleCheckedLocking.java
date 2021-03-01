@@ -4,9 +4,7 @@ public class DoubleCheckedLocking {
 
     private volatile static DoubleCheckedLocking uniqueInstance;
 
-    private DoubleCheckedLocking() {
-        System.out.println("Double Checked Locking Singleton");
-    }
+    private DoubleCheckedLocking() {}
 
     public static DoubleCheckedLocking getInstance() {
         if (uniqueInstance == null) {
