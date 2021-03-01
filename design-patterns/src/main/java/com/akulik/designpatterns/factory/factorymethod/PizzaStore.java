@@ -1,4 +1,4 @@
-package com.akulik.designpatterns.factory.factorymethod.store;
+package com.akulik.designpatterns.factory.factorymethod;
 
 import com.akulik.designpatterns.factory.factorymethod.style.Pizza;
 
@@ -13,6 +13,7 @@ public abstract class PizzaStore {
         pizza.bake();
         pizza.cut();
         pizza.box();
+
         return pizza;
     }
 

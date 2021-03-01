@@ -9,6 +9,7 @@ public class ChicagoStyleVeggiePizza extends Pizza {
         toppings.add("Shredded Mozzarella Cheese");
     }
 
+    @Override
     public void cut() {
         System.out.println("Cutting the pizza into square slices");
     }

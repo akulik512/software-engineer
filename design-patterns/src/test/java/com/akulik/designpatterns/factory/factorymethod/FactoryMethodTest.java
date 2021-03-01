@@ -1,8 +1,5 @@
 package com.akulik.designpatterns.factory.factorymethod;
 
-import com.akulik.designpatterns.factory.factorymethod.store.ChicagoPizzaStore;
-import com.akulik.designpatterns.factory.factorymethod.store.NYPizzaStore;
-import com.akulik.designpatterns.factory.factorymethod.store.PizzaStore;
 import com.akulik.designpatterns.factory.factorymethod.style.Pizza;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
