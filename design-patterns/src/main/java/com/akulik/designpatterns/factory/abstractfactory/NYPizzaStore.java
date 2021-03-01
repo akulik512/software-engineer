@@ -6,6 +6,7 @@ import com.akulik.designpatterns.factory.abstractfactory.pizza.*;
 
 public class NYPizzaStore extends PizzaStore {
 
+    @Override
     public Pizza createPizza(String item) {
         Pizza pizza = null;
         PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
