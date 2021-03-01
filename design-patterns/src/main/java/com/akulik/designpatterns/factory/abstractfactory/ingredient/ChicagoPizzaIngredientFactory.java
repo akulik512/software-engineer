@@ -16,6 +16,7 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Spin
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Veggies;
 
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
+
     @Override
     public Dough createDough() {
         return new ThickCrustDough();
@@ -45,5 +46,6 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
     public Clams createClam() {
         return new FrozenClams();
     }
+
 }
 

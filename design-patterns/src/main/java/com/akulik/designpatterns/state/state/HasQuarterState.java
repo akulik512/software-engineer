@@ -31,4 +31,5 @@ public class HasQuarterState implements State {
     public void dispense() {
         System.out.println("No gumball dispensed");
     }
+
 }

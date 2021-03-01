@@ -22,4 +22,5 @@ public class DinerMenuIterator implements Iterator {
         position = position + 1;
         return menuItem;
     }
+
 }

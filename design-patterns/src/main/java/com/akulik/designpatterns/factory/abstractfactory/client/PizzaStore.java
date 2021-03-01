@@ -3,6 +3,7 @@ package com.akulik.designpatterns.factory.abstractfactory.client;
 import com.akulik.designpatterns.factory.abstractfactory.Pizza;
 
 public abstract class PizzaStore {
+
     public Pizza orderPizza(String type) {
         Pizza pizza;
 
@@ -16,4 +17,5 @@ public abstract class PizzaStore {
     }
 
     protected abstract Pizza createPizza(String type);
+
 }

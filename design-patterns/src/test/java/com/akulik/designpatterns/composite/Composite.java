@@ -82,4 +82,5 @@ class Composite {
                 true, 4.29));
         return cafeMenu;
     }
+
 }

@@ -29,4 +29,5 @@ class StrategyTest {
         mallard.performFly();
         mallard.performQuack();
     }
+
 }

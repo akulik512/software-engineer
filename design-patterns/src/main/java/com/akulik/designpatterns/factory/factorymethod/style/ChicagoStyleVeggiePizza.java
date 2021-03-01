@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.factory.factorymethod.style;
 
 public class ChicagoStyleVeggiePizza extends Pizza {
+
     public ChicagoStyleVeggiePizza() {
         name = "Chicago Style Veggie Pizza";
         dough = "Extra Thick Crust Dough";

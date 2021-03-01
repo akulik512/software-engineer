@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.factory.factory.pizza;
 
 public class ClamPizza implements Pizza {
+
     @Override
     public void prepare() {
         System.out.println("Prepare Clam pizza");
@@ -20,4 +21,5 @@ public class ClamPizza implements Pizza {
     public void box() {
         System.out.println("Box Clam pizza");
     }
+
 }

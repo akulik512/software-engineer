@@ -22,4 +22,5 @@ class SynchronizedMethodTest {
         System.out.println("--- Finish");
         System.out.println("--- Result: start = " + (finish - start));
     }
+
 }

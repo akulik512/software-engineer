@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.singleton.synchronizedmethod;
 
 public class SynchronizedMethod {
+
     private static SynchronizedMethod uniqueInstance;
 
     private SynchronizedMethod() {
@@ -11,4 +12,5 @@ public class SynchronizedMethod {
         if (uniqueInstance == null) uniqueInstance = new SynchronizedMethod();
         return uniqueInstance;
     }
+
 }

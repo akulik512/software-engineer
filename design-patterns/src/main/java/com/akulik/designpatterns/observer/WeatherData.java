@@ -43,4 +43,5 @@ public class WeatherData implements Observable {
         this.pressure = pressure;
         measurementsChanged();
     }
+
 }

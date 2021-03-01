@@ -25,6 +25,6 @@ class AbstractFactoryTest {
 
         System.out.println("--- Order 4 ---");
         pizza = nyStore.orderPizza("veggie");
-
     }
+
 }

@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.factory.factorymethod.style;
 
 public class ChicagoStyleCheesePizza extends Pizza {
+
     public ChicagoStyleCheesePizza() {
         name = "Chicago Style Deep Dish Cheese Pizza";
         dough = "Extra Thick Crust Dough";

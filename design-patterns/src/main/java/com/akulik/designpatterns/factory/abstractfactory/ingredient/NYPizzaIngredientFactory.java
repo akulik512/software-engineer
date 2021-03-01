@@ -13,6 +13,7 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.sauce.Sauce;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.*;
 
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
+
     @Override
     public Dough createDough() {
         return new ThinCrustDough();
@@ -42,4 +43,5 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     public Clams createClam() {
         return new FreshClams();
     }
+
 }

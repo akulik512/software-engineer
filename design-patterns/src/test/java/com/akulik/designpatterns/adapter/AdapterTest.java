@@ -22,6 +22,6 @@ class AdapterTest {
         System.out.println("\nThe TurkeyAdapter says ...");
         turkeyAdapter.quack();
         turkeyAdapter.fly();
-
     }
+
 }

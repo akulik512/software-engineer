@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.singleton;
 
 public class Singleton {
+
     private static Singleton uniqueInstance;
 
     private Singleton() {
@@ -11,4 +12,5 @@ public class Singleton {
         if (uniqueInstance == null) uniqueInstance = new Singleton();
         return uniqueInstance;
     }
+
 }

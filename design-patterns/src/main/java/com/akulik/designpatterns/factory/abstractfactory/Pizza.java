@@ -10,6 +10,7 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Vegg
 import java.util.Arrays;
 
 public abstract class Pizza {
+
     public String name;
     public Dough dough;
     public Sauce sauce;
@@ -50,4 +51,5 @@ public abstract class Pizza {
                 ", clam=" + clam +
                 '}';
     }
+
 }

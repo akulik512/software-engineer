@@ -3,6 +3,7 @@ package com.akulik.designpatterns.factory.abstractfactory;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.PizzaIngredientFactory;
 
 public class PepperoniPizza extends Pizza {
+
     PizzaIngredientFactory ingredientFactory;
 
     public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {

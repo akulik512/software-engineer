@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.singleton.doublecheckedlocking;
 
 public class DoubleCheckedLocking {
+
     private volatile static DoubleCheckedLocking uniqueInstance;
 
     private DoubleCheckedLocking() {
@@ -17,4 +18,5 @@ public class DoubleCheckedLocking {
         }
         return uniqueInstance;
     }
+
 }

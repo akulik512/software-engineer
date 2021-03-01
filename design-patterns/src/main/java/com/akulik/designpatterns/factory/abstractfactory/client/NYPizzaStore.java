@@ -5,6 +5,7 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.NYPizzaIngre
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.PizzaIngredientFactory;
 
 public class NYPizzaStore extends PizzaStore {
+
     public Pizza createPizza(String item) {
         Pizza pizza = null;
         PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
@@ -29,4 +30,5 @@ public class NYPizzaStore extends PizzaStore {
         }
         return pizza;
     }
+
 }

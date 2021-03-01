@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.adapter;
 
 public class MallardDuck implements Duck {
+
     @Override
     public void quack() {
         System.out.println("Quack!");
@@ -10,4 +11,5 @@ public class MallardDuck implements Duck {
     public void fly() {
         System.out.println("Fly!");
     }
+
 }
