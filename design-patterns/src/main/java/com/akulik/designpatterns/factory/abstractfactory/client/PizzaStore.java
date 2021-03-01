@@ -4,7 +4,7 @@ import com.akulik.designpatterns.factory.abstractfactory.Pizza;
 
 public abstract class PizzaStore {
 
-    public Pizza orderPizza(String type) {
+    public void orderPizza(String type) {
         Pizza pizza;
 
         pizza = createPizza(type);
@@ -13,7 +13,6 @@ public abstract class PizzaStore {
         pizza.bake();
         pizza.cut();
         pizza.box();
-        return pizza;
     }
 
     protected abstract Pizza createPizza(String type);
