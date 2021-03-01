@@ -9,6 +9,7 @@ public class EncryptionDecorator extends DataSourceDecorator {
         super(source);
     }
 
+    // Add responsibilities to objects, it's invisible to the code that uses them.
     @Override
     public String printMessage(String message) {
         return super.printMessage(encrypt(message));
