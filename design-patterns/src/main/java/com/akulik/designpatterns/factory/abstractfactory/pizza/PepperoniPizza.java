@@ -1,12 +1,12 @@
-package com.akulik.designpatterns.factory.abstractfactory;
+package com.akulik.designpatterns.factory.abstractfactory.pizza;
 
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.PizzaIngredientFactory;
 
-public class CheesePizza extends Pizza {
+public class PepperoniPizza extends Pizza {
 
     PizzaIngredientFactory ingredientFactory;
 
-    public CheesePizza(PizzaIngredientFactory ingredientFactory) {
+    public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 
@@ -15,7 +15,7 @@ public class CheesePizza extends Pizza {
         dough = ingredientFactory.createDough();
         sauce = ingredientFactory.createSauce();
         veggies = ingredientFactory.createVeggies();
-        cheese = ingredientFactory.createCheese();
+        pepperoni = ingredientFactory.createPepperoni();
     }
 
 }

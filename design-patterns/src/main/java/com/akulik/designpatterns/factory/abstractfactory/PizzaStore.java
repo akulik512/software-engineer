@@ -1,6 +1,6 @@
-package com.akulik.designpatterns.factory.abstractfactory.client;
+package com.akulik.designpatterns.factory.abstractfactory;
 
-import com.akulik.designpatterns.factory.abstractfactory.Pizza;
+import com.akulik.designpatterns.factory.abstractfactory.pizza.Pizza;
 
 public abstract class PizzaStore {
 

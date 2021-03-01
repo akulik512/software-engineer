@@ -1,4 +1,4 @@
-package com.akulik.designpatterns.factory.abstractfactory;
+package com.akulik.designpatterns.factory.abstractfactory.pizza;
 
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.cheese.Cheese;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.clams.Clams;
