@@ -1,4 +1,4 @@
-package com.akulik.designpatterns.decorator.encrypt;
+package com.akulik.designpatterns.decorator;
 
 public class PublishDataSource implements DataSource {
 

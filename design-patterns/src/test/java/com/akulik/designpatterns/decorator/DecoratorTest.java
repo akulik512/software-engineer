@@ -1,9 +1,9 @@
-package com.akulik.designpatterns.decorator.encrypt;
+package com.akulik.designpatterns.decorator;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Decorator example 2")
+@DisplayName("Decorator example")
 class DecoratorTest {
 
     @Test
@@ -13,7 +13,7 @@ class DecoratorTest {
         System.out.println(publishDataSource.printMessage("Important business feature!"));
 
         System.out.print("Decorated message: ");
-        final DataSourceDecorator encoded = new EncryptionDecorator(new PublishDataSource());
+        final DataSourceDecorator encoded = new EncryptionDecorator(publishDataSource);
         System.out.println(encoded.printMessage("Important business feature!"));
     }
 

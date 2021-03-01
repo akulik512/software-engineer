@@ -1,4 +1,4 @@
-package com.akulik.designpatterns.decorator.encrypt;
+package com.akulik.designpatterns.decorator;
 
 import java.util.Base64;
 import java.util.stream.IntStream;
