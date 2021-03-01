@@ -1,15 +1,12 @@
 package com.akulik.designpatterns.observer;
 
-public class CurrentConditionsDisplay implements Observer, DisplayElement {
+public class CurrentConditionsDisplay implements Observer {
 
     private float temp;
     private float humidity;
     private float pressure;
 
-    private final Observable weatherData;
-
     public CurrentConditionsDisplay(Observable weatherData) {
-        this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
@@ -21,7 +18,6 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
         display();
     }
 
-    @Override
     public void display() {
         System.out.printf("Current conditions: %sF degrees and %s humidity and %shPa%n", temp, humidity, pressure);
     }
