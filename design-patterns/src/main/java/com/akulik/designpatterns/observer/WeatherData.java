@@ -33,15 +33,11 @@ public class WeatherData implements Observable {
         }
     }
 
-    public void measurementsChanged() {
-        notifyObservers();
-    }
-
     public void setTestData(float temp, float humidity, float pressure) {
         this.temp = temp;
         this.humidity = humidity;
         this.pressure = pressure;
-        measurementsChanged();
+        notifyObservers();
     }
 
 }
