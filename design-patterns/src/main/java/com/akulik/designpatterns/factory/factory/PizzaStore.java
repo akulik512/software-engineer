@@ -10,7 +10,7 @@ public class PizzaStore {
         this.factory = factory;
     }
 
-    public Pizza orderPizza (String type) {
+    public void orderPizza (String type) {
         Pizza pizza;
 
         pizza = factory.createPizza(type);
@@ -19,8 +19,6 @@ public class PizzaStore {
         pizza.bake();
         pizza.cut();
         pizza.box();
-
-        return pizza;
     }
 
 }
