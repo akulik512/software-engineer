@@ -1,4 +1,6 @@
 ### Design Patterns
+Don't forget to use `Ctrl` + `Alt` + `U` to build your class diagram!
+
 - Strategy [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/strategy) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/strategy) 
 - Decorator [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/decorator) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/decorator)
 - Observer [code](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/main/java/com/akulik/designpatterns/observer) [example](https://github.com/akulik512/software-engineer/tree/master/design-patterns/src/test/java/com/akulik/designpatterns/observer)
