@@ -1,32 +1,35 @@
-package com.akulik.designpatterns.factory.abstractfactory.client;
+package com.akulik.designpatterns.factory.abstractfactory;
 
-import com.akulik.designpatterns.factory.abstractfactory.*;
-import com.akulik.designpatterns.factory.abstractfactory.ingredient.ChicagoPizzaIngredientFactory;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.NYPizzaIngredientFactory;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.PizzaIngredientFactory;
+import com.akulik.designpatterns.factory.abstractfactory.pizza.*;
 
-public class ChicagoPizzaStore extends PizzaStore {
+public class NYPizzaStore extends PizzaStore {
+
+    @Override
     public Pizza createPizza(String item) {
         Pizza pizza = null;
-        PizzaIngredientFactory ingredientFactory = new ChicagoPizzaIngredientFactory();
+        PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
 
         switch (item) {
             case "cheese":
                 pizza = new CheesePizza(ingredientFactory);
-                pizza.setName("Chicago Style Cheese Pizza");
+                pizza.setName("New York Style Cheese Pizza");
                 break;
             case "veggie":
                 pizza = new VeggiePizza(ingredientFactory);
-                pizza.setName("Chicago Style Veggie Pizza");
+                pizza.setName("New York Style Veggie Pizza");
                 break;
             case "clam":
                 pizza = new ClamPizza(ingredientFactory);
-                pizza.setName("Chicago Style Clam Pizza");
+                pizza.setName("New York Style Clam Pizza");
                 break;
             case "pepperoni":
                 pizza = new PepperoniPizza(ingredientFactory);
-                pizza.setName("Chicago Style Pepperoni Pizza");
+                pizza.setName("New York Style Pepperoni Pizza");
                 break;
         }
         return pizza;
     }
+
 }

@@ -1,4 +1,4 @@
-package com.akulik.designpatterns.factory.abstractfactory;
+package com.akulik.designpatterns.factory.abstractfactory.pizza;
 
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.cheese.Cheese;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.clams.Clams;
@@ -10,6 +10,7 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Vegg
 import java.util.Arrays;
 
 public abstract class Pizza {
+
     public String name;
     public Dough dough;
     public Sauce sauce;
@@ -23,9 +24,11 @@ public abstract class Pizza {
     public void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
+
     public void cut() {
         System.out.println("Cutting the pizza into diagonal slices");
     }
+
     public void box() {
         System.out.println("Place pizza in official PizzaStore box");
     }
@@ -50,4 +53,5 @@ public abstract class Pizza {
                 ", clam=" + clam +
                 '}';
     }
+
 }

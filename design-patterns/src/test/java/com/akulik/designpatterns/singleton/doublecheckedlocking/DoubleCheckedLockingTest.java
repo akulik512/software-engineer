@@ -10,16 +10,14 @@ class DoubleCheckedLockingTest {
 
     @Test
     void example() {
-        final int start;
-        final int finish;
+        int start;
+        int finish;
 
-        System.out.println("--- Start");
         start = LocalDateTime.now().getNano();
-
         DoubleCheckedLocking.getInstance();
-
         finish = LocalDateTime.now().getNano();
-        System.out.println("--- Finish");
-        System.out.println("--- Result: start = " + (finish - start));
+
+        System.out.println("--- Run execution time: = " + (finish - start));
     }
+
 }

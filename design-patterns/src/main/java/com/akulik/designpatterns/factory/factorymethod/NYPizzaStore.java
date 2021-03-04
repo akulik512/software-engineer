@@ -1,10 +1,12 @@
-package com.akulik.designpatterns.factory.factorymethod.store;
+package com.akulik.designpatterns.factory.factorymethod;
 
 import com.akulik.designpatterns.factory.factorymethod.style.NYStyleCheesePizza;
 import com.akulik.designpatterns.factory.factorymethod.style.NYStyleVeggiePizza;
 import com.akulik.designpatterns.factory.factorymethod.style.Pizza;
 
 public class NYPizzaStore extends PizzaStore {
+
+    @Override
     public Pizza createPizza(String item) {
         switch (item) {
             case "cheese":
@@ -15,5 +17,6 @@ public class NYPizzaStore extends PizzaStore {
                 return null;
         }
     }
+
 }
 

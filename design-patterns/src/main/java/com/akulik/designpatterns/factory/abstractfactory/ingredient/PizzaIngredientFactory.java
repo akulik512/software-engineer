@@ -8,10 +8,17 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.sauce.Sauce;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Veggies;
 
 public interface PizzaIngredientFactory {
+
     Dough createDough();
+
     Sauce createSauce();
+
     Cheese createCheese();
+
     Veggies[] createVeggies();
+
     Pepperoni createPepperoni();
+
     Clams createClam();
+
 }

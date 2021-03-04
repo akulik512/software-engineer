@@ -24,4 +24,5 @@ public class LunchMenuIterator implements Iterator {
         position = position + 1;
         return menuItem;
     }
+
 }

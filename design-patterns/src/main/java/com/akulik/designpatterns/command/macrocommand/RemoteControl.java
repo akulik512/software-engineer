@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 
 // Invoker
 public class RemoteControl {
+
     private final Command[] onCommands;
     private final Command[] offCommands;
 
@@ -48,4 +49,5 @@ public class RemoteControl {
             offCommands[i] = noCommand;
         }
     }
+
 }

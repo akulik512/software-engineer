@@ -3,6 +3,7 @@ package com.akulik.designpatterns.factory.factorymethod.style;
 import java.util.ArrayList;
 
 public abstract class Pizza {
+
     public String name;
     public String dough;
     public String sauce;
@@ -33,5 +34,6 @@ public abstract class Pizza {
     public String getName() {
         return name;
     }
+
 }
 

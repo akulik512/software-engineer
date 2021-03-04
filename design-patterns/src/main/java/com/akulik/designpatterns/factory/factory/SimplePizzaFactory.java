@@ -8,20 +8,15 @@ import com.akulik.designpatterns.factory.factory.pizza.Pizza;
 public class SimplePizzaFactory {
 
     public Pizza createPizza(String type) {
-        Pizza pizza = null;
-
         switch (type) {
             case "cheese":
-                pizza = new CheesePizza();
-                break;
+                return new CheesePizza();
             case "pepperoni":
-                pizza = new PepperoniPizza();
-                break;
+                return new PepperoniPizza();
             case "clam":
-                pizza = new ClamPizza();
-                break;
+                return new ClamPizza();
         }
-
-        return pizza;
+        return null;
     }
+
 }

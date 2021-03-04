@@ -1,8 +1,11 @@
 package com.akulik.designpatterns.adapter;
 
+import com.akulik.designpatterns.adapter.duck.Duck;
+import com.akulik.designpatterns.adapter.turkey.Turkey;
+
 public class TurkeyAdapter implements Duck {
 
-    Turkey turkey;
+    private final Turkey turkey;
 
     public TurkeyAdapter(Turkey turkey) {
         this.turkey = turkey;
@@ -19,4 +22,5 @@ public class TurkeyAdapter implements Duck {
             turkey.fly();
         }
     }
+
 }

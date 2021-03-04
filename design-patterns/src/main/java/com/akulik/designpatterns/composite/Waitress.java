@@ -11,4 +11,5 @@ public class Waitress {
     public void printMenu() {
         allMenus.print();
     }
+
 }

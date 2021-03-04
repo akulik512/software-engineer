@@ -16,4 +16,5 @@ class ObserverTest {
         weatherData.setTestData(82f, 70f, 29.2f);
         weatherData.setTestData(78f, 90f, 29.2f);
     }
+
 }

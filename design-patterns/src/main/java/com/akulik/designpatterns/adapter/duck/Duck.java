@@ -1,6 +1,9 @@
-package com.akulik.designpatterns.adapter;
+package com.akulik.designpatterns.adapter.duck;
 
 public interface Duck {
+
     void quack();
+
     void fly();
+
 }

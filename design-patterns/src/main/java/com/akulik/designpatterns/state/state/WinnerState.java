@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.state.state;
 
 public class WinnerState implements State {
+
     @Override
     public void insertQuarter() {
 
@@ -20,4 +21,5 @@ public class WinnerState implements State {
     public void dispense() {
 
     }
+
 }

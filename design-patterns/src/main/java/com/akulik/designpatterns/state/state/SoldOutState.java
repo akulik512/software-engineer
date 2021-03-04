@@ -29,4 +29,5 @@ public class SoldOutState implements State {
     public void dispense() {
         System.out.println("Nope");
     }
+
 }

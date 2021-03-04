@@ -1,15 +1,15 @@
-package com.akulik.designpatterns.decorator.encrypt;
+package com.akulik.designpatterns.decorator;
 
 public class DataSourceDecorator implements DataSource {
 
     private final DataSource wrapper;
 
-    public DataSourceDecorator(final DataSource source) {
+    public DataSourceDecorator(DataSource source) {
         this.wrapper = source;
     }
 
     @Override
-    public String printMessage(final String message) {
+    public String printMessage(String message) {
         return wrapper.printMessage(message);
     }
 

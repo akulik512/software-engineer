@@ -1,8 +1,9 @@
-package com.akulik.designpatterns.factory.abstractfactory.client;
+package com.akulik.designpatterns.factory.factorymethod;
 
-import com.akulik.designpatterns.factory.abstractfactory.Pizza;
+import com.akulik.designpatterns.factory.factorymethod.style.Pizza;
 
 public abstract class PizzaStore {
+
     public Pizza orderPizza(String type) {
         Pizza pizza;
 
@@ -12,8 +13,10 @@ public abstract class PizzaStore {
         pizza.bake();
         pizza.cut();
         pizza.box();
+
         return pizza;
     }
 
     protected abstract Pizza createPizza(String type);
+
 }

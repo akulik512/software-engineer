@@ -24,4 +24,5 @@ class State {
 
         System.out.println(gumballMachine);
     }
+
 }

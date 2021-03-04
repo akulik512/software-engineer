@@ -1,6 +1,7 @@
-package com.akulik.designpatterns.adapter;
+package com.akulik.designpatterns.adapter.turkey;
 
 public class WildTurkey implements Turkey {
+
     @Override
     public void gobble() {
         System.out.println("Gobble gobble!");
@@ -10,4 +11,5 @@ public class WildTurkey implements Turkey {
     public void fly() {
         System.out.println("I'm flying a short distance!");
     }
+
 }

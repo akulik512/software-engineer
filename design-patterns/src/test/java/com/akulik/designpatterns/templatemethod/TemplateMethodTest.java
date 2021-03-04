@@ -8,13 +8,13 @@ class TemplateMethodTest {
 
     @Test
     void example() {
-        System.out.println("Let's make some tea:");
-        final Tea tea = new Tea();
-        tea.prepareRecipe();
+        System.out.println("Make tea:");
+        final CaffeineBeverage tea = new Tea();
+        tea.prepareBeverage();
 
-        System.out.println("\nLet's make some coffee:");
-        final Coffee coffee = new Coffee();
-        coffee.prepareRecipe();
+        System.out.println("\nMake coffee:");
+        final CaffeineBeverage coffee = new Coffee();
+        coffee.prepareBeverage();
     }
 
 }

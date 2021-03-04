@@ -1,7 +1,12 @@
 package com.akulik.designpatterns.adapter;
 
+import com.akulik.designpatterns.adapter.duck.Duck;
+import com.akulik.designpatterns.adapter.duck.MallardDuck;
+import com.akulik.designpatterns.adapter.turkey.WildTurkey;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("Adapter")
 class AdapterTest {
 
     @Test
@@ -22,6 +27,6 @@ class AdapterTest {
         System.out.println("\nThe TurkeyAdapter says ...");
         turkeyAdapter.quack();
         turkeyAdapter.fly();
-
     }
+
 }

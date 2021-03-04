@@ -12,7 +12,7 @@ public class LunchMenu {
     public LunchMenu() {
         menuItems = new ArrayList<>();
 
-        addItem("K&B’s Pancake Breakfast", "Pancakes with scrambled eggs, and toast",
+        addItem("K&B's Pancake Breakfast", "Pancakes with scrambled eggs, and toast",
                 true, 2.99);
 
         addItem("Regular Pancake Breakfast", "Pancakes with fried eggs, sausage",

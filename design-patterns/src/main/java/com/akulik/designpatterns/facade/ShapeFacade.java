@@ -1,6 +1,7 @@
 package com.akulik.designpatterns.facade;
 
 public class ShapeFacade {
+
     private final Shape circle;
     private final Shape rectangle;
     private final Shape square;
@@ -17,4 +18,5 @@ public class ShapeFacade {
         rectangle.draw();
         square.draw();
     }
+
 }
