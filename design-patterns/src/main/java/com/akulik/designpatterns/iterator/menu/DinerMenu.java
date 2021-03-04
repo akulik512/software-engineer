@@ -12,7 +12,7 @@ public class DinerMenu {
     public DinerMenu() {
         menuItems = new MenuItem[MAX_ITEMS];
 
-        addItem("Vegetarian BLT", "(Fakin’) Bacon with lettuce & tomato on whole wheat",
+        addItem("Vegetarian BLT", "(Fakin') Bacon with lettuce & tomato on whole wheat",
                 true, 2.99);
 
         addItem("BLT", "Bacon with lettuce & tomato on whole wheat",
@@ -28,7 +28,7 @@ public class DinerMenu {
     private void addItem(String name, String description, boolean vegetarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         if (currentPosition >= MAX_ITEMS) {
-            System.err.println("Sorry, menu is full! Can’t add item to menu");
+            System.err.println("Sorry, menu is full! Can't add item to menu");
         } else {
             menuItems[currentPosition] = menuItem;
             currentPosition = currentPosition + 1;

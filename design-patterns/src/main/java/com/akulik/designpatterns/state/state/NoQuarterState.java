@@ -18,12 +18,12 @@ public class NoQuarterState implements State {
 
     @Override
     public void ejectQuarter() {
-        System.out.println("You haven’t inserted a quarter");
+        System.out.println("You haven't inserted a quarter");
     }
 
     @Override
     public void turnCrank() {
-        System.out.println("You turned, but there’s no quarter");
+        System.out.println("You turned, but there's no quarter");
     }
 
     @Override
