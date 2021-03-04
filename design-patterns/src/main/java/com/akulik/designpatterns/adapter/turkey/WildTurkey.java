@@ -1,4 +1,4 @@
-package com.akulik.designpatterns.adapter;
+package com.akulik.designpatterns.adapter.turkey;
 
 public class WildTurkey implements Turkey {
 
