@@ -1,6 +1,7 @@
 package com.akulik.ocp;
 
-public class Test {
+public class Operator {
+
     /**
      * Operators =+ and +=
     * */
@@ -13,4 +14,5 @@ public class Test {
         System.out.println("x =+ 2 -> " + x);
         System.out.println("y += 2 -> " + y);
     }
+
 }
