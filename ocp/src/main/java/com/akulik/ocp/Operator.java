@@ -100,6 +100,9 @@ public class Operator {
             c = (a < b && b == 2);  // c is false
             c = (a < b || b == 2);  // c is true
             c = (a < b || b == 3);  // c is false
+
+            // For Exclusive OR, either part has to be true,
+            // and the other part has to be false for the overall result to become true.
             c = (a > b ^ b == 2);   // c is false
             return c;
         }
