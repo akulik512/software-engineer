@@ -4,7 +4,7 @@ package com.akulik.ocp;
  * <pre>
  * 1 - Assignments and Arithmetics Operators;
  * 2 - Compound Assignments
- * 3 -
+ * 3 - Operator Evaluation Order
  * </pre>
  * */
 public class Operator {
@@ -17,6 +17,10 @@ public class Operator {
         // 2
         CompoundAssignments assignments = new CompoundAssignments();
         System.out.println(assignments.result());
+
+        // 3
+        OperatorEvaluationOrder order = new OperatorEvaluationOrder();
+        System.out.println(order.result());
     }
 
     static class AssignmentsAndArithmetics {
@@ -40,6 +44,15 @@ public class Operator {
             a /= 2;      // equivalent of a = a / 2; (a is 3)
             a %= a;      // equivalent of a = a / 2; (a is 0)
             return a;
+        }
+    }
+
+    static class OperatorEvaluationOrder {
+        public int result() {
+            int a = 2, b = 3;
+            int c = b - a * b;   // (c is -3)
+            int d = (b - a) * b; // (d is 3)
+            return d;
         }
     }
 }
