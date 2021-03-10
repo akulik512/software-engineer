@@ -29,7 +29,7 @@ public class Operator {
         IncrementDecrementOperators operators = new IncrementDecrementOperators();
         System.out.println(operators.result());
 
-        //4
+        // 5
         ConditionalOperators conditionalOperators = new ConditionalOperators();
         System.out.println(conditionalOperators.result());
 
@@ -39,7 +39,7 @@ public class Operator {
     }
 
     private static class AssignmentsAndArithmetics {
-        public int result() {
+        private int result() {
             int a = 1;      // assignment (a is 1)
             int b = a + 4;  // addition (b is 5)
             int c = b - 2;  // subtraction (c is 3)
@@ -51,7 +51,7 @@ public class Operator {
     }
 
     private static class CompoundAssignments {
-        public int result() {
+        private int result() {
             int a = 1, b = 3;
             a += b;      // equivalent of a = a + b; (a is 4)
             a -= 2;      // equivalent of a = a - 2; (a is 2)
@@ -63,7 +63,7 @@ public class Operator {
     }
 
     private static class OperatorEvaluationOrder {
-        public int result() {
+        private int result() {
             int a = 2, b = 3;
             int c = b - a * b;   // (c is -3)
             int d = (b - a) * b; // (d is 3)
@@ -72,7 +72,7 @@ public class Operator {
     }
 
     private static class IncrementDecrementOperators {
-        public int result() {
+        private int result() {
             int a = 1, b = 0;
             a++;        // increment (a is 2)
             ++a;        // increment (a is 3)
@@ -88,7 +88,7 @@ public class Operator {
     }
 
     private static class ConditionalOperators {
-        public boolean result() {
+        private boolean result() {
             int a = 3, b = 2;
             boolean c = false;
 
@@ -139,7 +139,7 @@ public class Operator {
      * those effects never occur.
      * */
     private static class ShortCircuitEvaluation {
-        public boolean result() {
+        private boolean result() {
             int a = 3, b = 2;
             boolean c = false;
 
