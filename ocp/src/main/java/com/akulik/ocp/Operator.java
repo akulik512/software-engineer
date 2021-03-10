@@ -28,7 +28,7 @@ public class Operator {
         System.out.println(operators.result());
     }
 
-    static class AssignmentsAndArithmetics {
+    private static class AssignmentsAndArithmetics {
         public int result() {
             int a = 1;      // assignment (a is 1)
             int b = a + 4;  // addition (b is 5)
@@ -40,7 +40,7 @@ public class Operator {
         }
     }
 
-    static class CompoundAssignments {
+    private static class CompoundAssignments {
         public int result() {
             int a = 1, b = 3;
             a += b;      // equivalent of a = a + b; (a is 4)
@@ -52,7 +52,7 @@ public class Operator {
         }
     }
 
-    static class OperatorEvaluationOrder {
+    private static class OperatorEvaluationOrder {
         public int result() {
             int a = 2, b = 3;
             int c = b - a * b;   // (c is -3)
@@ -61,7 +61,7 @@ public class Operator {
         }
     }
 
-    static class IncrementDecrementOperators {
+    private static class IncrementDecrementOperators {
         public int result() {
             int a = 1, b = 0;
             a++;        // increment (a is 2)
@@ -76,4 +76,5 @@ public class Operator {
             return b;
         }
     }
+
 }
