@@ -1,18 +1,26 @@
 package com.akulik.ocp;
 
+/**
+ * 1 - Assignments and Arithmetics Operators
+ * 2 -
+ * */
 public class Operator {
 
-    /**
-     * Operators =+ and +=
-    * */
     public static void main(String[] args) {
-        int x = 1;
-        x =+ 2;
+        // 1
+        AssignmentsAndArithmetics arithmetics = new AssignmentsAndArithmetics();
+        arithmetics.result();
 
-        int y = 1;
-        y += 2;
-        System.out.println("x =+ 2 -> " + x);
-        System.out.println("y += 2 -> " + y);
     }
 
+    static class AssignmentsAndArithmetics {
+        public void result() {
+            int a = 1;      // assignment (a is 1)
+            int b = a + 4;  // addition (b is 5)
+            int c = b - 2;  // subtraction (c is 3)
+            int d = c * b;  // multiplication (d is 15)
+            int e = d / c;  // division (e is 5)
+            int f = e % 6;  // modulus (f is 3)
+        }
+    }
 }
