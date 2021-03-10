@@ -6,6 +6,7 @@ package com.akulik.ocp;
  * 2 - Compound Assignments
  * 3 - Operator Evaluation Order
  * 4 - Increment Decrement Operators
+ * 5 - Conditional Operators
  * </pre>
  * */
 public class Operator {
@@ -26,6 +27,10 @@ public class Operator {
         // 4
         IncrementDecrementOperators operators = new IncrementDecrementOperators();
         System.out.println(operators.result());
+
+        //4
+        ConditionalOperators conditionalOperators = new ConditionalOperators();
+        System.out.println(conditionalOperators.result());
     }
 
     private static class AssignmentsAndArithmetics {
@@ -74,6 +79,29 @@ public class Operator {
             b = a--;    // decrement postfix (b is 3, a is 2)
             b = --a;    // decrement prefix (b is 1, a is 1)
             return b;
+        }
+    }
+
+    private static class ConditionalOperators {
+        public boolean result() {
+            int a = 3, b = 2;
+            boolean c = false;
+
+            c = (a == b);           // c is false
+            c = !(a == b);          // c is true
+            c = (a != b);           // c is false
+            c = (a > b);            // c is true
+            c = (a >= b);           // c is true
+            c = (a < b);            // c is false
+            c = (a <= b);           // c is false
+
+            c = (a > b && b == 2);  // c is true
+            c = (a > b && b == 2);  // c is true
+            c = (a < b && b == 2);  // c is false
+            c = (a < b || b == 2);  // c is true
+            c = (a < b || b == 3);  // c is false
+            c = (a > b ^ b == 2);   // c is false
+            return c;
         }
     }
 
