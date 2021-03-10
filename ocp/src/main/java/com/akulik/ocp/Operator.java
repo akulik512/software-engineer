@@ -5,6 +5,7 @@ package com.akulik.ocp;
  * 1 - Assignments and Arithmetics Operators;
  * 2 - Compound Assignments
  * 3 - Operator Evaluation Order
+ * 4 - Increment Decrement Operators
  * </pre>
  * */
 public class Operator {
@@ -21,6 +22,10 @@ public class Operator {
         // 3
         OperatorEvaluationOrder order = new OperatorEvaluationOrder();
         System.out.println(order.result());
+
+        // 4
+        IncrementDecrementOperators operators = new IncrementDecrementOperators();
+        System.out.println(operators.result());
     }
 
     static class AssignmentsAndArithmetics {
@@ -53,6 +58,22 @@ public class Operator {
             int c = b - a * b;   // (c is -3)
             int d = (b - a) * b; // (d is 3)
             return d;
+        }
+    }
+
+    static class IncrementDecrementOperators {
+        public int result() {
+            int a = 1, b = 0;
+            a++;        // increment (a is 2)
+            ++a;        // increment (a is 3)
+            a--;        // increment (a is 2)
+            --a;        // increment (a is 1)
+
+            b = a++;    // increment postfix (b is 1, a is 2)
+            b = ++a;    // increment prefix (b is 3, a is 3)
+            b = a--;    // decrement postfix (b is 3, a is 2)
+            b = --a;    // decrement prefix (b is 1, a is 1)
+            return b;
         }
     }
 }
