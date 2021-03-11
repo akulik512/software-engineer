@@ -1,6 +1,9 @@
 package com.akulik.ocp;
 
+import java.math.BigDecimal;
+import java.text.NumberFormat;
 import java.time.*;
+import java.util.Locale;
 
 public class DateAPI {
 
@@ -12,6 +15,10 @@ public class DateAPI {
         // 2
         ZoneAPI zoneAPI = new ZoneAPI();
         zoneAPI.result();
+
+        // 3
+        LocaleAPI localeAPI = new LocaleAPI();
+        localeAPI.result();
     }
 
     private static class DurationAPI {
@@ -46,6 +53,35 @@ public class DateAPI {
 
             ZonedDateTime laTime = londonTime.withZoneSameInstant(la);
             System.out.println(laTime);
+        }
+    }
+
+    private static class LocaleAPI {
+        private void result() {
+                                                                                // Language Country Variant
+            // Locale uk = new Locale("en", "GB");                              // English  Britain
+            Locale uk = new Locale("en", "GB", "EURO"); // English  Britain Euro (custom variant)
+            Locale us = new Locale("en", "US");                // English  America
+            Locale fr = new Locale("fr", "FR");                // French   France
+            Locale cf = new Locale("fr", "CA");                // French  Canada
+            // Locale fr = new Locale("fr", "029");                             // French  Caribbean
+            Locale es = new Locale("fr");                              // French
+            Locale current = Locale.getDefault();                               // current default locate
+            Locale th = Locale.forLanguageTag("th-TH-u-ca-buddhist-nu-thai");
+
+            BigDecimal price = BigDecimal.valueOf(2.99);
+            Double tax = 0.2;
+            int quantity = 12345;
+            Locale locale = new Locale("en", "GB");
+            NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+            NumberFormat percentageFormat = NumberFormat.getPercentInstance(locale);
+            NumberFormat numberFormat = NumberFormat.getNumberInstance(locale);
+
+            String formattedPrice = currencyFormat.format(price);
+            String formattedTax = percentageFormat.format(tax);
+            String formattedQuantity = numberFormat.format(quantity);
+            System.out.println("formattedPrice: " + formattedPrice +
+                    " formattedTax: " + formattedTax + " formattedQuantity: " + formattedQuantity);
         }
     }
 }
