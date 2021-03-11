@@ -8,6 +8,10 @@ public class DateAPI {
         // 1
         InstantsDurationsPeriods instantsDurationsPeriods = new InstantsDurationsPeriods();
         instantsDurationsPeriods.result();
+
+        // 2
+        ZoneAPI zoneAPI = new ZoneAPI();
+        zoneAPI.result();
     }
 
     private static class InstantsDurationsPeriods {
@@ -28,6 +32,20 @@ public class DateAPI {
             long seconds = twoHours.minusMinutes(15).getSeconds();
             int days = howLong.getDays();
             System.out.println(seconds + " " + days); // 6300 11
+        }
+    }
+
+    private static class ZoneAPI {
+        private void result() {
+            ZoneId london = ZoneId.of("Europe/London");
+            ZoneId la = ZoneId.of("America/Los_Angeles");
+
+            LocalDateTime someTime = LocalDateTime.of(2019, Month.APRIL, 1, 07, 14);
+            ZonedDateTime londonTime = ZonedDateTime.of(someTime, london);
+            System.out.println(londonTime);
+
+            ZonedDateTime laTime = londonTime.withZoneSameInstant(la);
+            System.out.println(laTime);
         }
     }
 }
