@@ -3,6 +3,8 @@ package com.akulik.ocp;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Locale;
 
 public class DateAPI {
@@ -19,6 +21,10 @@ public class DateAPI {
         // 3
         LocaleAPI localeAPI = new LocaleAPI();
         localeAPI.result();
+
+        // 4
+        ParseDate parseDate = new ParseDate();
+        parseDate.result();
     }
 
     private static class DurationAPI {
@@ -58,6 +64,7 @@ public class DateAPI {
 
     private static class LocaleAPI {
         private void result() {
+            // Part 1: Initialize
                                                                                 // Language Country Variant
             // Locale uk = new Locale("en", "GB");                              // English  Britain
             Locale uk = new Locale("en", "GB", "EURO"); // English  Britain Euro (custom variant)
@@ -69,9 +76,11 @@ public class DateAPI {
             Locale current = Locale.getDefault();                               // current default locate
             Locale th = Locale.forLanguageTag("th-TH-u-ca-buddhist-nu-thai");
 
+            // Part 2: Parse Locale
             BigDecimal price = BigDecimal.valueOf(2.99);
             Double tax = 0.2;
             int quantity = 12345;
+
             Locale locale = new Locale("en", "GB");
             NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
             NumberFormat percentageFormat = NumberFormat.getPercentInstance(locale);
@@ -80,8 +89,27 @@ public class DateAPI {
             String formattedPrice = currencyFormat.format(price);
             String formattedTax = percentageFormat.format(tax);
             String formattedQuantity = numberFormat.format(quantity);
+
             System.out.println("formattedPrice: " + formattedPrice +
                     " formattedTax: " + formattedTax + " formattedQuantity: " + formattedQuantity);
+        }
+    }
+
+    private static class ParseDate {
+        private void result() {
+            LocalDate date = LocalDate.of(2019, Month.APRIL, 1);
+            Locale locale = new Locale("en", "GB");
+            DateTimeFormatter format = DateTimeFormatter.ofPattern("EEEE dd MMM yyyy", locale);
+            String result = date.format(format);
+
+            System.out.println(result);
+
+            date = LocalDate.parse("Tuesday 31 Mar 2020", format);
+            locale = new Locale("ru");
+            format = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).localizedBy(locale);
+            result = date.format(format);
+
+            System.out.println(result);
         }
     }
 }
