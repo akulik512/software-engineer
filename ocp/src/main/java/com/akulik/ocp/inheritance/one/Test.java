@@ -1,6 +1,6 @@
 package com.akulik.ocp.inheritance.one;
 
-public class Inheritance {
+public class Test {
     public static void main(String[] args) {
         Food x1 = new Food();
         Product x2 = new Drink();
