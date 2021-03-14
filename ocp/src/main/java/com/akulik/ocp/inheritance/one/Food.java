@@ -1,4 +1,4 @@
-package com.akulik.ocp.inheritance;
+package com.akulik.ocp.inheritance.one;
 
 public class Food extends Product {
     @Override
