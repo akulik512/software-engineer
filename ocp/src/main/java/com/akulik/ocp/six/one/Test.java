@@ -1,4 +1,4 @@
-package com.akulik.ocp.inheritance.one;
+package com.akulik.ocp.six.one;
 
 public class Test {
     public static void main(String[] args) {

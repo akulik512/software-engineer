@@ -1,4 +1,4 @@
-package com.akulik.ocp.inheritance.one;
+package com.akulik.ocp.six.one;
 
 public class Drink extends Product {
     @Override

@@ -1,4 +1,4 @@
-package com.akulik.ocp.inheritance.four;
+package com.akulik.ocp.six.four;
 
 public class StringEx {
     public static void main(String[] args) {
