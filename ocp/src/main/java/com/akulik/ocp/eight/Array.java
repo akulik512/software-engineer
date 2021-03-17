@@ -1,5 +1,8 @@
-package com.akulik.ocp;
+package com.akulik.ocp.eight;
 
+/**
+ * 8: Arrays and Loops
+ */
 public class Array {
 
     public static void main(String[] args) {
