@@ -1,5 +1,6 @@
 package com.akulik.ocp.nine;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,30 +11,24 @@ public class CollectionsEx {
 
     public static void main(String[] args) {
         // 1
+        System.out.println("\nNT --Different way to create list");
         CreateListObject createListObject = new CreateListObject();
         createListObject.result();
+
+        // 1
+        System.out.println("\nNT --Remove operation behaviours");
+        RemoveOperationExample removeOperationExample = new RemoveOperationExample();
+        removeOperationExample.result();
     }
 
     private static class CreateListObject {
         private void result() {
-            // Read only List! Check Google Docs or javadoc
-            List<String> readOnly = List.of("string");
-            // readOnly.add("new string");
-            // System.out.println(readOnly); // EXCEPTION!
-            System.out.println("The original item of the read-only collection: " + readOnly.get(0));
-            System.out.println("After modification: " + readOnly.get(0).toUpperCase());
-
-            // Fixed sized!
-            List<String> stringList = Arrays.asList("string");
-            // stringList.add("new string");
-            // System.out.println(stringList);// EXCEPTION!
-
-            // Difference between List.of and Arrays.asList?
-            ArrayListCreationDiff arrayListCreationDiff = new ArrayListCreationDiff();
-            arrayListCreationDiff.result();;
+            CreateList createList = new CreateList();
+            createList.result();;
         }
 
-        private static class ArrayListCreationDiff {
+        // Difference between List.of and Arrays.asList
+        private static class CreateList {
             private void result() {
                 showImmutable();
                 showNull();
@@ -88,6 +83,21 @@ public class CollectionsEx {
                 array2[1] = 10;
                 System.out.println("Modified of: " + of); // Prints [1, 2, 3]
             }
+        }
+    }
+
+    private static class RemoveOperationExample {
+        private void result() {
+            List<Object> list = new ArrayList<>();
+            list.add(1);
+            list.add("test");
+            list.add("test");
+            list.add(2);
+            System.out.println("Original list: " + list);
+
+            list.remove("test");
+            System.out.println("Modified list: " + list);
+
         }
     }
 }
