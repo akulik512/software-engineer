@@ -20,6 +20,8 @@ public class CollectionsEx {
             List<String> readOnly = List.of("string");
             // readOnly.add("new string");
             // System.out.println(readOnly); // EXCEPTION!
+            System.out.println("The original item of the read-only collection: " + readOnly.get(0));
+            System.out.println("After modification: " + readOnly.get(0).toUpperCase());
 
             // Fixed sized!
             List<String> stringList = Arrays.asList("string");
