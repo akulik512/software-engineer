@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 9: Collections
  */
-public class CollectionsEx {
+public class ListEx {
 
     public static void main(String[] args) {
         // 1
