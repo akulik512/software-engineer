@@ -17,11 +17,15 @@ public class JavaIO {
         private void result() {
             Charset utf8 = StandardCharsets.UTF_8;
 
-            try (BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(String.format("%sthirteen_in.txt", PATH)), utf8));
-                 PrintWriter out = new PrintWriter(new OutputStreamWriter(new FileOutputStream(String.format("%sthirteen_out.txt", PATH)), utf8))) {
-                String line = null;
+            try (BufferedReader in = new BufferedReader(
+                    new InputStreamReader(
+                            new FileInputStream(String.format("%sthirteen_in.txt", PATH)), utf8));
+                 PrintWriter out = new PrintWriter(
+                         new OutputStreamWriter(
+                                 new FileOutputStream(String.format("%sthirteen_out.txt", PATH)), utf8))) {
+                String line;
                 while ((line = in.readLine()) != null) {
-                    out.write(line);
+                    out.println(line);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
