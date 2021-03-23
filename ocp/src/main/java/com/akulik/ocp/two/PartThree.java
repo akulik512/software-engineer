@@ -1,5 +1,7 @@
 package com.akulik.ocp.two;
 
+import java.util.concurrent.Flow;
+
 public class PartThree {
     public void result() {
         ConditionalOperators conditionalOperators = new ConditionalOperators();
@@ -7,6 +9,9 @@ public class PartThree {
 
         ShortCircuitEvaluation shortCircuitEvaluation = new ShortCircuitEvaluation();
         shortCircuitEvaluation.result();
+
+        SwitchEx switchEx = new SwitchEx();
+        switchEx.result();
     }
 
     private static class ConditionalOperators {
@@ -71,6 +76,20 @@ public class PartThree {
             c = (a > 2 || ++b == 3);    // c is false, b is 4
             c = (a > 2 | ++b == 3);     // c is false, b is 5
             return c;
+        }
+    }
+
+    private static class SwitchEx {
+        private void result() {
+            int a = 1;
+            switch (a) {
+                case 1: case 2: case 3:
+                    System.out.println("Unusual case example!");
+                    break;
+                case 5:
+                    System.out.println("Usual switch!");
+                    break;
+            }
         }
     }
 
