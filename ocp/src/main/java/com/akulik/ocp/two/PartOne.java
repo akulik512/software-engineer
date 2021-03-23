@@ -1,17 +1,16 @@
 package com.akulik.ocp.two;
 
-public class PrimitiveTypesPart1 {
+public class PartOne {
     public void result() {
-        // 5
         AssignmentsAndArithmetics arithmetics = new AssignmentsAndArithmetics();
         System.out.println(arithmetics.result());
-        // 5
+
         CompoundAssignments assignments = new CompoundAssignments();
         System.out.println(assignments.result());
-        // 5
+
         OperatorEvaluationOrder order = new OperatorEvaluationOrder();
         System.out.println(order.result());
-        // 5
+
         IncrementDecrementOperators operators = new IncrementDecrementOperators();
         System.out.println(operators.result());
     }

@@ -1,6 +1,6 @@
 package com.akulik.ocp.two;
 
-public class PrimitiveTypesPart3 {
+public class PartThree {
     public void result() {
         ConditionalOperators conditionalOperators = new ConditionalOperators();
         conditionalOperators.result();

@@ -3,10 +3,10 @@ package com.akulik.ocp.two;
 public class PrimitiveTypes {
 
     public static void main(String[] args) {
-        PrimitiveTypesPart1 partOne = new PrimitiveTypesPart1();
+        PartOne partOne = new PartOne();
         partOne.result();
 
-        PrimitiveTypesPart3 partThree = new PrimitiveTypesPart3();
+        PartThree partThree = new PartThree();
         partThree.result();
     }
 
