@@ -1,6 +1,6 @@
 package com.akulik.ocp.eleven;
 
-import com.akulik.lab.Message;
+import com.akulik.lab.compare.Message;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Mode;

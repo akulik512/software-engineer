@@ -1,4 +1,4 @@
-package com.akulik.lab;
+package com.akulik.lab.compare;
 
 public class Message {
     private int id;

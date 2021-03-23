@@ -1,4 +1,4 @@
-package com.akulik.lab;
+package com.akulik.lab.compare;
 
 import java.util.ArrayList;
 
