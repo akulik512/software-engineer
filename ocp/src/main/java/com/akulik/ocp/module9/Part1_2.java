@@ -1,9 +1,9 @@
-package com.akulik.ocp.nine;
+package com.akulik.ocp.module9;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class SetEx {
+public class Part1_2 {
     public static void main(String[] args) {
         Set<String> stringSet = new HashSet<>();
         stringSet.add(null);

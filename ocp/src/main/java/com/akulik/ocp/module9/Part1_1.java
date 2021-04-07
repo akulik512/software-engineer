@@ -1,21 +1,16 @@
-package com.akulik.ocp.nine;
+package com.akulik.ocp.module9;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * 9: Collections
- */
-public class ListEx {
+public class Part1_1 {
 
     public static void main(String[] args) {
-        // 1
         System.out.println("\nNT --Different way to create list");
         CreateListObject createListObject = new CreateListObject();
         createListObject.result();
 
-        // 1
         System.out.println("\nNT --Remove operation behaviours");
         RemoveOperationExample removeOperationExample = new RemoveOperationExample();
         removeOperationExample.result();
