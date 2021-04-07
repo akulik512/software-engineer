@@ -1,18 +1,14 @@
-package com.akulik.ocp;
+package com.akulik.ocp.module3;
 
-public class StringEx {
+public class Part1 {
     public static void main(String[] args) {
-        // 1
-        StringIndexing stringIndexing = new StringIndexing();
-        System.out.println(stringIndexing.result());
+        StringIndexing.result();
 
-        // 2
-        StringBuilderEx stringBuilderEx = new StringBuilderEx();
-        System.out.println(stringBuilderEx.result());
+        StringBuilder.result();
     }
 
     private static class StringIndexing {
-        private int result() {
+        private static void result() {
             String a = "HelloWorld";
             String b = a.substring(0, 5);            // b is "Hello"
             int c = a.indexOf('o');                  // c is 4
@@ -22,13 +18,12 @@ public class StringEx {
             char g = a.charAt(0);                    // g is H
             int h = a.length();                      // h is 10
             // char i = a.charAt(10);                // StringIndexOutOfBoundsException
-            return h;
         }
     }
 
-    private static class StringBuilderEx {
-        private int result() {
-            StringBuilder sB = new StringBuilder();
+    private static class StringBuilder {
+        private static void result() {
+            java.lang.StringBuilder sB = new java.lang.StringBuilder();
             sB.append("tea");               // sb is tea
             sB.append('s');                 // sb is teas
             sB.insert(3, 'm');     // sb is teams
@@ -36,7 +31,6 @@ public class StringEx {
             sB.reverse();                   // sb is set
             int length = sB.length();       // length is 3
             int capacity = sB.capacity();   // length is 16
-            return capacity;
         }
     }
 }

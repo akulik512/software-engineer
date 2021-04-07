@@ -1,4 +1,4 @@
-package com.akulik.ocp;
+package com.akulik.ocp.module3;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
@@ -7,28 +7,20 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.Locale;
 
-public class DateAPI {
+public class Part2 {
 
     public static void main(String[] args) {
-        // 1
-        DurationAPI durationAPI = new DurationAPI();
-        durationAPI.result();
+        DurationAPI.result();
 
-        // 2
-        ZoneAPI zoneAPI = new ZoneAPI();
-        zoneAPI.result();
+        ZoneAPI.result();
 
-        // 3
-        LocaleAPI localeAPI = new LocaleAPI();
-        localeAPI.result();
+        LocaleAPI.result();
 
-        // 4
-        ParseDate parseDate = new ParseDate();
-        parseDate.result();
+        ParseDate.result();
     }
 
     private static class DurationAPI {
-        private void result() {
+        private static void result() {
             LocalDate today = LocalDate.now();
             LocalDate foolsDay = LocalDate.of(2019, Month.APRIL,1);
 
@@ -49,7 +41,7 @@ public class DateAPI {
     }
 
     private static class ZoneAPI {
-        private void result() {
+        private static void result() {
             ZoneId london = ZoneId.of("Europe/London");
             ZoneId la = ZoneId.of("America/Los_Angeles");
 
@@ -63,7 +55,7 @@ public class DateAPI {
     }
 
     private static class LocaleAPI {
-        private void result() {
+        private static void result() {
             // Part 1: Initialize
                                                                                 // Language Country Variant
             // Locale uk = new Locale("en", "GB");                              // English  Britain
@@ -96,7 +88,7 @@ public class DateAPI {
     }
 
     private static class ParseDate {
-        private void result() {
+        private static void result() {
             LocalDate date = LocalDate.of(2019, Month.APRIL, 1);
             Locale locale = new Locale("en", "GB");
             DateTimeFormatter format = DateTimeFormatter.ofPattern("EEEE dd MMM yyyy", locale);
