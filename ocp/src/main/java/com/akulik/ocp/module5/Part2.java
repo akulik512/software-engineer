@@ -1,6 +1,6 @@
-package com.akulik.ocp.five;
+package com.akulik.ocp.module5;
 
-public enum EnumEx {
+public enum Part2 {
     // We must create parametrized constructor
     MERCURY (3.303e+23, 2.4397e6),
     VENUS   (4.869e+24, 6.0518e6),
@@ -15,7 +15,7 @@ public enum EnumEx {
     private final double radius; // in meters
 
     // Only private or default
-    EnumEx(double mass, double radius) {
+    Part2(double mass, double radius) {
         this.mass = mass;
         this.radius = radius;
     }
@@ -29,9 +29,11 @@ public enum EnumEx {
     double surfaceGravity() {
         return G * mass / (radius * radius);
     }
+
     double surfaceWeight(double otherMass) {
         return otherMass * surfaceGravity();
     }
+
     public static void main(String[] args) {
         if (args.length != 1) {
             System.err.println("Usage: java Planet <earth_weight>");
@@ -39,8 +41,9 @@ public enum EnumEx {
         }
         double earthWeight = Double.parseDouble(args[0]);
         double mass = earthWeight/EARTH.surfaceGravity();
-        for (EnumEx p : EnumEx.values())
+        for (Part2 p : Part2.values())
             System.out.printf("Your weight on %s is %f%n",
                     p, p.surfaceWeight(mass));
     }
+
 }
