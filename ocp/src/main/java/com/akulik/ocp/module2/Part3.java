@@ -3,18 +3,15 @@ package com.akulik.ocp.module2;
 public class Part3 {
 
     public static void main(String[] args) {
-        ConditionalOperators conditionalOperators = new ConditionalOperators();
-        conditionalOperators.result();
+        ConditionalOperators.result();
 
-        ShortCircuitEvaluation shortCircuitEvaluation = new ShortCircuitEvaluation();
-        shortCircuitEvaluation.result();
+        ShortCircuitEvaluation.result();
 
-        SwitchEx switchEx = new SwitchEx();
-        switchEx.result();
+        SwitchEx.result();
     }
 
     private static class ConditionalOperators {
-        private boolean result() {
+        private static boolean result() {
             int a = 3, b = 2;
             boolean c = false;
 
@@ -65,7 +62,7 @@ public class Part3 {
      * those effects never occur.
      * */
     private static class ShortCircuitEvaluation {
-        private boolean result() {
+        private static boolean result() {
             int a = 3, b = 2;
             boolean c = false;
 
@@ -79,7 +76,7 @@ public class Part3 {
     }
 
     private static class SwitchEx {
-        private void result() {
+        private static void result() {
             int a = 1;
             switch (a) {
                 case 1: case 2: case 3:

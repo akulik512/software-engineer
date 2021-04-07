@@ -3,21 +3,17 @@ package com.akulik.ocp.module2;
 public class Part1 {
 
     public static void main(String[] args) {
-        AssignmentsAndArithmetics arithmetics = new AssignmentsAndArithmetics();
-        System.out.println(arithmetics.result());
+        System.out.println(AssignmentsAndArithmetics.result());
 
-        CompoundAssignments assignments = new CompoundAssignments();
-        System.out.println(assignments.result());
+        System.out.println(CompoundAssignments.result());
 
-        OperatorEvaluationOrder order = new OperatorEvaluationOrder();
-        System.out.println(order.result());
+        System.out.println(OperatorEvaluationOrder.result());
 
-        IncrementDecrementOperators operators = new IncrementDecrementOperators();
-        System.out.println(operators.result());
+        System.out.println(IncrementDecrementOperators.result());
     }
 
     private static class AssignmentsAndArithmetics {
-        private int result() {
+        private static int result() {
             int a = 1;      // assignment (a is 1)
             int b = a + 4;  // addition (b is 5)
             int c = b - 2;  // subtraction (c is 3)
@@ -29,7 +25,7 @@ public class Part1 {
     }
 
     private static class CompoundAssignments {
-        private int result() {
+        private static int result() {
             int a = 1, b = 3;
             a += b;      // equivalent of a = a + b; (a is 4)
             a -= 2;      // equivalent of a = a - 2; (a is 2)
@@ -41,7 +37,7 @@ public class Part1 {
     }
 
     private static class OperatorEvaluationOrder {
-        private int result() {
+        private static int result() {
             int a = 2, b = 3;
             int c = b - a * b;   // (c is -3)
             int d = (b - a) * b; // (d is 3)
@@ -50,7 +46,7 @@ public class Part1 {
     }
 
     private static class IncrementDecrementOperators {
-        private int result() {
+        private static int result() {
             int a = 1, b = 0;
             a++;        // increment (a is 2)
             ++a;        // increment (a is 3)
