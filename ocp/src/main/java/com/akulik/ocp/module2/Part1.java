@@ -1,7 +1,8 @@
-package com.akulik.ocp.two;
+package com.akulik.ocp.module2;
 
-public class PartOne {
-    public void result() {
+public class Part1 {
+
+    public static void main(String[] args) {
         AssignmentsAndArithmetics arithmetics = new AssignmentsAndArithmetics();
         System.out.println(arithmetics.result());
 

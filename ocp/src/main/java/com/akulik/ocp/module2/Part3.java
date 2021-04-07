@@ -1,9 +1,8 @@
-package com.akulik.ocp.two;
+package com.akulik.ocp.module2;
 
-import java.util.concurrent.Flow;
+public class Part3 {
 
-public class PartThree {
-    public void result() {
+    public static void main(String[] args) {
         ConditionalOperators conditionalOperators = new ConditionalOperators();
         conditionalOperators.result();
 
