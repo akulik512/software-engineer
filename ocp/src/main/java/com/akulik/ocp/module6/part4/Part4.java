@@ -1,6 +1,6 @@
-package com.akulik.ocp.six.four;
+package com.akulik.ocp.module6.part4;
 
-public class StringEx {
+public class Part4 {
     public static void main(String[] args) {
         String a = "Hello";
         String b = "Hello";
@@ -12,6 +12,6 @@ public class StringEx {
         System.out.println("a.equals(b) // " + (a.equals(b)));
         System.out.println("a.equals(c) // " + (a.equals(c)));
         System.out.println("a.equals(d) // " + (a.equals(d)));
-        System.out.println("a.equals(d) // " + (a.equalsIgnoreCase(d)));
+        System.out.println("a.equalsIgnoreCase(d) // " + (a.equalsIgnoreCase(d)));
     }
 }

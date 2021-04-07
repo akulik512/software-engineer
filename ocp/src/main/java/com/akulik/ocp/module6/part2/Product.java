@@ -1,4 +1,4 @@
-package com.akulik.ocp.six.two;
+package com.akulik.ocp.module6.part2;
 
 public class Product {
 

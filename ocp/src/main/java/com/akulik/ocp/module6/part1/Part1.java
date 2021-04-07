@@ -1,9 +1,8 @@
-package com.akulik.ocp.six.one;
+package com.akulik.ocp.module6.part1;
 
-public class Test {
+public class Part1 {
     public static void main(String[] args) {
         Food x1 = new Food();
-        Product x2 = new Drink();
         x1.toString();
         x1.getName();
         x1.getBestBefore();
