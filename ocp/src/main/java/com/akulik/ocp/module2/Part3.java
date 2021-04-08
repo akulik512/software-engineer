@@ -3,15 +3,18 @@ package com.akulik.ocp.module2;
 public class Part3 {
 
     public static void main(String[] args) {
-        ConditionalOperators.result();
+        ConditionalOperators conditionalOperators = new ConditionalOperators();
+        conditionalOperators.result();
 
-        ShortCircuitEvaluation.result();
+        ShortCircuitEvaluation shortCircuitEvaluation = new ShortCircuitEvaluation();
+        shortCircuitEvaluation.result();
 
-        SwitchEx.result();
+        SwitchEx switchEx = new SwitchEx();
+        switchEx.result();
     }
 
     private static class ConditionalOperators {
-        private static boolean result() {
+        private void result() {
             int a = 3, b = 2;
             boolean c = false;
 
@@ -32,7 +35,6 @@ public class Part3 {
             // For Exclusive OR, either part has to be true,
             // and the other part has to be false for the overall result to become true.
             c = (a > b ^ b == 2);   // c is false
-            return c;
         }
     }
 
@@ -62,7 +64,7 @@ public class Part3 {
      * those effects never occur.
      * */
     private static class ShortCircuitEvaluation {
-        private static boolean result() {
+        private void result() {
             int a = 3, b = 2;
             boolean c = false;
 
@@ -71,12 +73,11 @@ public class Part3 {
             c = (a > 2 || ++b == 3);    // c is false, b is 4
             c = (a > 2 || ++b == 3);    // c is false, b is 4
             c = (a > 2 | ++b == 3);     // c is false, b is 5
-            return c;
         }
     }
 
     private static class SwitchEx {
-        private static void result() {
+        private void result() {
             int a = 1;
             switch (a) {
                 case 1: case 2: case 3:

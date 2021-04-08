@@ -10,17 +10,21 @@ import java.util.Locale;
 public class Part2 {
 
     public static void main(String[] args) {
-        DurationAPI.result();
+        DurationAPI durationAPI = new DurationAPI();
+        durationAPI.result();
 
-        ZoneAPI.result();
+        ZoneAPI zoneAPI = new ZoneAPI();
+        zoneAPI.result();
 
-        LocaleAPI.result();
+        LocaleAPI localeAPI = new LocaleAPI();
+        localeAPI.result();
 
-        ParseDate.result();
+        ParseDate parseDate = new ParseDate();
+        parseDate.result();
     }
 
     private static class DurationAPI {
-        private static void result() {
+        private void result() {
             LocalDate today = LocalDate.now();
             LocalDate foolsDay = LocalDate.of(2019, Month.APRIL,1);
 
@@ -41,7 +45,7 @@ public class Part2 {
     }
 
     private static class ZoneAPI {
-        private static void result() {
+        private void result() {
             ZoneId london = ZoneId.of("Europe/London");
             ZoneId la = ZoneId.of("America/Los_Angeles");
 
@@ -55,7 +59,7 @@ public class Part2 {
     }
 
     private static class LocaleAPI {
-        private static void result() {
+        private void result() {
             // Part 1: Initialize
                                                                                 // Language Country Variant
             // Locale uk = new Locale("en", "GB");                              // English  Britain
@@ -88,7 +92,7 @@ public class Part2 {
     }
 
     private static class ParseDate {
-        private static void result() {
+        private void result() {
             LocalDate date = LocalDate.of(2019, Month.APRIL, 1);
             Locale locale = new Locale("en", "GB");
             DateTimeFormatter format = DateTimeFormatter.ofPattern("EEEE dd MMM yyyy", locale);

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Part2 {
+public class Part3 {
 
     public static void main(String[] args) {
         int sum = Stream.of("ONE", "TWO", "THREE", "FOUR")

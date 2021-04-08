@@ -3,11 +3,12 @@ package com.akulik.ocp.module2;
 public class Part2 {
 
     public static void main(String[] args) {
-        ArithmeticOperationsAndTypeCasting.result();
+        ArithmeticOperationsAndTypeCasting arithmeticOperationsAndTypeCasting = new ArithmeticOperationsAndTypeCasting();
+        arithmeticOperationsAndTypeCasting.result();
     }
 
     private static class ArithmeticOperationsAndTypeCasting {
-        private static void result() {
+        private void result() {
             byte a = 127, b = 5;
             // byte c = a + b;      // compilation fails
             int d = a + b;          // d is 132

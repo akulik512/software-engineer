@@ -2,13 +2,15 @@ package com.akulik.ocp.module3;
 
 public class Part1 {
     public static void main(String[] args) {
-        StringIndexing.result();
+        StringIndexing stringIndexing = new StringIndexing();
+        stringIndexing.result();
 
-        StringBuilder.result();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.result();
     }
 
     private static class StringIndexing {
-        private static void result() {
+        private void result() {
             String a = "HelloWorld";
             String b = a.substring(0, 5);            // b is "Hello"
             int c = a.indexOf('o');                  // c is 4
@@ -22,7 +24,7 @@ public class Part1 {
     }
 
     private static class StringBuilder {
-        private static void result() {
+        private void result() {
             java.lang.StringBuilder sB = new java.lang.StringBuilder();
             sB.append("tea");               // sb is tea
             sB.append('s');                 // sb is teas
