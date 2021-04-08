@@ -1,9 +1,7 @@
-package com.akulik.ocp.eight;
+package com.akulik.ocp.module8;
 
-/**
- * 8: Arrays and Loops
- */
-public class ArraysAndLoops {
+public class Part1 {
+
     public static void main(String[] args) {
         // 1
         ArrayExample arrayExample = new ArrayExample();
@@ -13,7 +11,7 @@ public class ArraysAndLoops {
         loop.result();
     }
 
-    static private class ArrayExample {
+    private static class ArrayExample {
         private void result() {
             System.out.println("\n-- Play with array: ");
             String[] arr = new String[5];
@@ -39,7 +37,7 @@ public class ArraysAndLoops {
         }
     }
 
-    static private class Loop {
+    private static class Loop {
         private void result() {
             // Interesting iteration case by array
             // See sum += i++
