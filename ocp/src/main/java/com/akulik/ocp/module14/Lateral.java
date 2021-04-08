@@ -1,4 +1,4 @@
-package com.akulik.ocp.fourteen;
+package com.akulik.ocp.module14;
 
 public class Lateral implements Runnable {
     @Override

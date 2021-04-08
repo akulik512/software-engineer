@@ -1,16 +1,15 @@
-package com.akulik.ocp.thirteen;
+package com.akulik.ocp.module13;
 
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-public class JavaIO {
+public class Part1 {
+
     private static final String PATH = "/home/akulik/IdeaProjects/software-engineer/ocp/src/main/java/com/akulik/ocp/thirteen/";
 
     public static void main(String[] args) {
-        // 1
-        ConnectingStream connectingStream = new ConnectingStream();
-        connectingStream.result();
+        new ConnectingStream().result();
     }
 
     private static class ConnectingStream {

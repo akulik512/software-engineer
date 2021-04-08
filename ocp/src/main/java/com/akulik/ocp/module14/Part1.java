@@ -1,12 +1,11 @@
-package com.akulik.ocp.fourteen;
+package com.akulik.ocp.module14;
 
-public class PartOne {
+public class Part1 {
+
     public static void main(String[] args) {
-        SimpleThread simpleThread = new SimpleThread();
-        simpleThread.result();
+        new SimpleThread().result();
 
-        InterruptThread interruptThread = new InterruptThread();
-        interruptThread.result();
+        new InterruptThread().result();
     }
 
     private static class SimpleThread {

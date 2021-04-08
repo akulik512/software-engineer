@@ -1,4 +1,4 @@
-package com.akulik.ocp.eleven;
+package com.akulik.ocp.module11;
 
 import com.akulik.lab.compare.Message;
 import org.openjdk.jmh.annotations.Benchmark;
@@ -10,7 +10,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamEx {
+public class Part2 {
+
     public static void main(String[] args) {
         int sum = Stream.of("ONE", "TWO", "THREE", "FOUR")
                 .mapToInt(String::length)
