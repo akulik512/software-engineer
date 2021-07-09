@@ -1,6 +1,11 @@
+### IDEA ###
 .idea
-.mvn
-target
 software-engineer.iml
 design-patterns/design-patterns.iml
 ocp/ocp.iml
+
+### Maven ###
+.mvn
+target
+design-patterns/target
+ocp/target
