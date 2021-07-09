@@ -12,43 +12,39 @@ import java.util.stream.Stream;
 
 public class Part3 {
 
-    public static void main(String[] args) {
-        int sum = Stream.of("ONE", "TWO", "THREE", "FOUR")
-                .mapToInt(String::length)
-                .peek(System.out::println)
-                .filter(i -> i > 3)
-                .sum();
+  public static void main(String[] args) {
+    int sum =
+        Stream.of("ONE", "TWO", "THREE", "FOUR")
+            .mapToInt(String::length)
+            .peek(System.out::println)
+            .filter(i -> i > 3)
+            .sum();
 
-        System.out.println("Sum=" + sum);
+    System.out.println("Sum=" + sum);
 
-        parallelStreamTest();
-        sequentialStreamTest();
-    }
+    parallelStreamTest();
+    sequentialStreamTest();
+  }
 
-    @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    public static void parallelStreamTest() {
-        List<Message> names = new ArrayList<>();
-        names.add(new Message(1, "Brest"));
-        names.add(new Message(1, "Minsk"));
-        names.add(new Message(1, "Grodno"));
+  @Benchmark
+  @BenchmarkMode(Mode.AverageTime)
+  public static void parallelStreamTest() {
+    List<Message> names = new ArrayList<>();
+    names.add(new Message(1, "Brest"));
+    names.add(new Message(1, "Minsk"));
+    names.add(new Message(1, "Grodno"));
 
-        names.stream()
-                .parallel()
-                .map(Message::getId)
-                .collect(Collectors.toList());
-    }
+    names.stream().parallel().map(Message::getId).collect(Collectors.toList());
+  }
 
-    @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    public static void sequentialStreamTest() {
-        List<Message> names = new ArrayList<>();
-        names.add(new Message(1, "Brest"));
-        names.add(new Message(1, "Minsk"));
-        names.add(new Message(1, "Grodno"));
+  @Benchmark
+  @BenchmarkMode(Mode.AverageTime)
+  public static void sequentialStreamTest() {
+    List<Message> names = new ArrayList<>();
+    names.add(new Message(1, "Brest"));
+    names.add(new Message(1, "Minsk"));
+    names.add(new Message(1, "Grodno"));
 
-        names.stream()
-                .map(Message::getId)
-                .collect(Collectors.toList());
-    }
+    names.stream().map(Message::getId).collect(Collectors.toList());
+  }
 }
