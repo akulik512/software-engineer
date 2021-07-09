@@ -2,12 +2,11 @@ package com.akulik.designpatterns.state.state;
 
 public interface State {
 
-    void insertQuarter();
+  void insertQuarter();
 
-    void ejectQuarter();
+  void ejectQuarter();
 
-    void turnCrank();
+  void turnCrank();
 
-    void dispense();
-
+  void dispense();
 }

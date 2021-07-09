@@ -10,24 +10,23 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Strategy")
 class StrategyTest {
 
-    @Test
-    void example() {
-        Duck mallard = new MallardDuck();
-        mallard.setFlyBehavior(new FlyWithWings());
-        mallard.setQuackBehavior(new Squeak());
+  @Test
+  void example() {
+    Duck mallard = new MallardDuck();
+    mallard.setFlyBehavior(new FlyWithWings());
+    mallard.setQuackBehavior(new Squeak());
 
-        mallard.display();
+    mallard.display();
 
-        mallard.performFly();
-        mallard.performQuack();
+    mallard.performFly();
+    mallard.performQuack();
 
-        System.out.println("------------");
+    System.out.println("------------");
 
-        mallard.setFlyBehavior(new FlyNoWay());
-        mallard.setQuackBehavior(new Quack());
+    mallard.setFlyBehavior(new FlyNoWay());
+    mallard.setQuackBehavior(new Quack());
 
-        mallard.performFly();
-        mallard.performQuack();
-    }
-
+    mallard.performFly();
+    mallard.performQuack();
+  }
 }

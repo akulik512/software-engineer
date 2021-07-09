@@ -2,8 +2,7 @@ package com.akulik.designpatterns.adapter.turkey;
 
 public interface Turkey {
 
-    void gobble();
+  void gobble();
 
-    void fly();
-
+  void fly();
 }

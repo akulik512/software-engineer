@@ -8,13 +8,12 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Iterator")
 class Iterator {
 
-    @Test
-    void example() {
-        LunchMenu lunchMenu = new LunchMenu();
-        DinerMenu dinerMenu = new DinerMenu();
+  @Test
+  void example() {
+    LunchMenu lunchMenu = new LunchMenu();
+    DinerMenu dinerMenu = new DinerMenu();
 
-        Waitress waitress = new Waitress(lunchMenu, dinerMenu);
-        waitress.printMenu();
-    }
-
+    Waitress waitress = new Waitress(lunchMenu, dinerMenu);
+    waitress.printMenu();
+  }
 }

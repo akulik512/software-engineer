@@ -4,19 +4,18 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.PizzaIngredi
 
 public class PepperoniPizza extends Pizza {
 
-    PizzaIngredientFactory ingredientFactory;
+  PizzaIngredientFactory ingredientFactory;
 
-    public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
-        this.ingredientFactory = ingredientFactory;
-    }
+  public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
+    this.ingredientFactory = ingredientFactory;
+  }
 
-    @Override
-    public void prepare() {
-        System.out.println("Preparing " + name);
-        dough = ingredientFactory.createDough();
-        sauce = ingredientFactory.createSauce();
-        veggies = ingredientFactory.createVeggies();
-        pepperoni = ingredientFactory.createPepperoni();
-    }
-
+  @Override
+  public void prepare() {
+    System.out.println("Preparing " + name);
+    dough = ingredientFactory.createDough();
+    sauce = ingredientFactory.createSauce();
+    veggies = ingredientFactory.createVeggies();
+    pepperoni = ingredientFactory.createPepperoni();
+  }
 }

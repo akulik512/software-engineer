@@ -8,16 +8,15 @@ import java.time.LocalDateTime;
 @DisplayName("Singleton Synchronized Method")
 class SynchronizedMethodTest {
 
-    @Test
-    void example() {
-        int start;
-        int finish;
+  @Test
+  void example() {
+    int start;
+    int finish;
 
-        start = LocalDateTime.now().getNano();
-        SynchronizedMethod.getInstance();
-        finish = LocalDateTime.now().getNano();
+    start = LocalDateTime.now().getNano();
+    SynchronizedMethod.getInstance();
+    finish = LocalDateTime.now().getNano();
 
-        System.out.println("--- Run execution time: = " + (finish - start));
-    }
-
+    System.out.println("--- Run execution time: = " + (finish - start));
+  }
 }

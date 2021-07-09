@@ -2,12 +2,11 @@ package com.akulik.designpatterns.factory.factory.pizza;
 
 public interface Pizza {
 
-    void prepare();
+  void prepare();
 
-    void bake();
+  void bake();
 
-    void cut();
+  void cut();
 
-    void box();
-
+  void box();
 }

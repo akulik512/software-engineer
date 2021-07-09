@@ -9,16 +9,15 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Vegg
 
 public interface PizzaIngredientFactory {
 
-    Dough createDough();
+  Dough createDough();
 
-    Sauce createSauce();
+  Sauce createSauce();
 
-    Cheese createCheese();
+  Cheese createCheese();
 
-    Veggies[] createVeggies();
+  Veggies[] createVeggies();
 
-    Pepperoni createPepperoni();
+  Pepperoni createPepperoni();
 
-    Clams createClam();
-
+  Clams createClam();
 }

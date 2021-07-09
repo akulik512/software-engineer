@@ -4,14 +4,13 @@ import com.akulik.designpatterns.command.command.action.Command;
 
 public class SimpleRemoteControl {
 
-    Command slot;
+  Command slot;
 
-    public void setSlot(Command slot) {
-        this.slot = slot;
-    }
+  public void setSlot(Command slot) {
+    this.slot = slot;
+  }
 
-    public void buttonWasPressed() {
-        slot.execute();
-    }
-
+  public void buttonWasPressed() {
+    slot.execute();
+  }
 }

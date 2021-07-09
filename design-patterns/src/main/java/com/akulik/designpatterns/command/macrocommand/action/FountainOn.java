@@ -4,15 +4,14 @@ import com.akulik.designpatterns.command.macrocommand.entity.Fountain;
 
 public class FountainOn implements Command {
 
-    Fountain fountain;
+  Fountain fountain;
 
-    public FountainOn(Fountain fountain) {
-        this.fountain = fountain;
-    }
+  public FountainOn(Fountain fountain) {
+    this.fountain = fountain;
+  }
 
-    @Override
-    public void execute() {
-        fountain.on();
-    }
-
+  @Override
+  public void execute() {
+    fountain.on();
+  }
 }

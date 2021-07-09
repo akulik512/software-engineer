@@ -6,11 +6,10 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Facade")
 class FacadeTest {
 
-    @Test
-    void example() {
-        final ShapeFacade shapeFacade = new ShapeFacade();
+  @Test
+  void example() {
+    final ShapeFacade shapeFacade = new ShapeFacade();
 
-        shapeFacade.draw();
-    }
-
+    shapeFacade.draw();
+  }
 }

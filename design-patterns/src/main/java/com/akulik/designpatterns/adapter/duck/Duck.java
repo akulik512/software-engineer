@@ -2,8 +2,7 @@ package com.akulik.designpatterns.adapter.duck;
 
 public interface Duck {
 
-    void quack();
+  void quack();
 
-    void fly();
-
+  void fly();
 }

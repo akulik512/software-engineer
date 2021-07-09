@@ -2,6 +2,5 @@ package com.akulik.designpatterns.decorator;
 
 public interface DataSource {
 
-    String printMessage(String data);
-
+  String printMessage(String data);
 }

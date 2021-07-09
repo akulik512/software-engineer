@@ -8,16 +8,15 @@ import java.time.LocalDateTime;
 @DisplayName("Singleton Double Checked Locking")
 class DoubleCheckedLockingTest {
 
-    @Test
-    void example() {
-        int start;
-        int finish;
+  @Test
+  void example() {
+    int start;
+    int finish;
 
-        start = LocalDateTime.now().getNano();
-        DoubleCheckedLocking.getInstance();
-        finish = LocalDateTime.now().getNano();
+    start = LocalDateTime.now().getNano();
+    DoubleCheckedLocking.getInstance();
+    finish = LocalDateTime.now().getNano();
 
-        System.out.println("--- Run execution time: = " + (finish - start));
-    }
-
+    System.out.println("--- Run execution time: = " + (finish - start));
+  }
 }

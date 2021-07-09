@@ -2,19 +2,18 @@ package com.akulik.designpatterns.singleton.doublecheckedlocking;
 
 public class DoubleCheckedLocking {
 
-    private volatile static DoubleCheckedLocking uniqueInstance;
+  private static volatile DoubleCheckedLocking uniqueInstance;
 
-    private DoubleCheckedLocking() {}
+  private DoubleCheckedLocking() {}
 
-    public static DoubleCheckedLocking getInstance() {
+  public static DoubleCheckedLocking getInstance() {
+    if (uniqueInstance == null) {
+      synchronized (DoubleCheckedLocking.class) {
         if (uniqueInstance == null) {
-            synchronized (DoubleCheckedLocking.class) {
-                if (uniqueInstance == null) {
-                    uniqueInstance = new DoubleCheckedLocking();
-                }
-            }
+          uniqueInstance = new DoubleCheckedLocking();
         }
-        return uniqueInstance;
+      }
     }
-
+    return uniqueInstance;
+  }
 }

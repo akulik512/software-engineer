@@ -2,13 +2,12 @@ package com.akulik.designpatterns.singleton.synchronizedmethod;
 
 public class SynchronizedMethod {
 
-    private static SynchronizedMethod uniqueInstance;
+  private static SynchronizedMethod uniqueInstance;
 
-    private SynchronizedMethod() {}
+  private SynchronizedMethod() {}
 
-    public static synchronized SynchronizedMethod getInstance() {
-        if (uniqueInstance == null) uniqueInstance = new SynchronizedMethod();
-        return uniqueInstance;
-    }
-
+  public static synchronized SynchronizedMethod getInstance() {
+    if (uniqueInstance == null) uniqueInstance = new SynchronizedMethod();
+    return uniqueInstance;
+  }
 }

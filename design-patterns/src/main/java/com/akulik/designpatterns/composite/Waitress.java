@@ -2,14 +2,13 @@ package com.akulik.designpatterns.composite;
 
 public class Waitress {
 
-    private final MenuComponent allMenus;
+  private final MenuComponent allMenus;
 
-    public Waitress(MenuComponent allMenus) {
-        this.allMenus = allMenus;
-    }
+  public Waitress(MenuComponent allMenus) {
+    this.allMenus = allMenus;
+  }
 
-    public void printMenu() {
-        allMenus.print();
-    }
-
+  public void printMenu() {
+    allMenus.print();
+  }
 }

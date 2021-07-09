@@ -4,15 +4,14 @@ import java.util.Arrays;
 
 public class MacroCommand implements Command {
 
-    Command[] commands;
+  Command[] commands;
 
-    public MacroCommand(Command[] commands) {
-        this.commands = commands;
-    }
+  public MacroCommand(Command[] commands) {
+    this.commands = commands;
+  }
 
-    @Override
-    public void execute() {
-        Arrays.stream(commands).forEach(Command::execute);
-    }
-
+  @Override
+  public void execute() {
+    Arrays.stream(commands).forEach(Command::execute);
+  }
 }

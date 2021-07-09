@@ -2,23 +2,22 @@ package com.akulik.designpatterns.templatemethod;
 
 public abstract class CaffeineBeverage {
 
-    final void prepareBeverage() {
-        boilWater();
-        brew();
-        pourInCup();
-        addCondiments();
-    }
+  final void prepareBeverage() {
+    boilWater();
+    brew();
+    pourInCup();
+    addCondiments();
+  }
 
-    public abstract void brew();
+  public abstract void brew();
 
-    public abstract void addCondiments();
+  public abstract void addCondiments();
 
-    public void boilWater() {
-        System.out.println("- Boiling water!");
-    }
+  public void boilWater() {
+    System.out.println("- Boiling water!");
+  }
 
-    private void pourInCup() {
-        System.out.println("- Pouring into cup!");
-    }
-
+  private void pourInCup() {
+    System.out.println("- Pouring into cup!");
+  }
 }

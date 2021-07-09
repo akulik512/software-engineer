@@ -2,8 +2,7 @@ package com.akulik.designpatterns.iterator.iterator;
 
 public interface Iterator {
 
-    boolean hasNext();
+  boolean hasNext();
 
-    Object next();
-
+  Object next();
 }
