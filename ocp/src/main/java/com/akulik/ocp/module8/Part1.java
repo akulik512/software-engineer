@@ -29,7 +29,7 @@ public class Part1 {
 
       System.out.println("\n-- Default array initialization: ");
       double[] arr1 = new double[5];
-      for (var i : arr1) {
+      for (double i : arr1) {
         System.out.println(i);
       }
     }

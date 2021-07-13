@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.akulik'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation 'org.openjdk.jmh:jmh-core:1.28'
+    implementation 'org.openjdk.jmh:jmh-generator-annprocess:1.28'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.0-M1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.0-M1'
+}
+
+description = 'design-patterns'
