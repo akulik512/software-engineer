@@ -8,17 +8,18 @@ package com.akulik.cses.introductoryproblems;
  * */
 public class WeirdAlgorithm {
 
-  public void action(final int number) {
-    int result;
-
-    do {
+  public void action(final int value) {
+    int number = value;
+    System.out.printf("%d ", number);
+    while (number != 1) {
       if (number % 2 == 0) {
-        result = number / 2;
+        number = number / 2;
+        System.out.printf("%d ", number);
       } else {
-        result = (number * 3) + 1;
+        number = (number * 3) + 1;
+        System.out.printf("%d ", number);
       }
-      System.out.print(result + " ");
-    } while (result != 1);
+    }
   }
 
 }
