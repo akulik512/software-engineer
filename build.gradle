@@ -2,6 +2,8 @@ plugins {
     id 'java'
 }
 
+apply from: file("${rootDir}/gradle/dependencies.gradle")
+
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(11))
@@ -13,8 +15,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation "org.junit.jupiter:junit-jupiter-api:5.8.1"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.8.1"
-    implementation "org.openjdk.jmh:jmh-core:1.33"
-    implementation "org.openjdk.jmh:jmh-generator-annprocess:1.33"
+    testImplementation(libraries.junit_jupiter_api)
+    testRuntimeOnly(libraries.junit_jupiter_engine)
+    implementation(libraries.jmh_core)
+    implementation(libraries.jmh_generator_annprocess)
 }
