@@ -16,6 +16,7 @@ public class WeirdAlgorithm {
   public static void main(String[] args) {
     try (final BufferedReader bufferedReader =
         new BufferedReader(new InputStreamReader(System.in))) {
+
       final StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
       long number = Integer.parseInt(stringTokenizer.nextToken());
 
@@ -30,9 +31,8 @@ public class WeirdAlgorithm {
       }
 
       System.out.print(number);
-    } catch (final IOException e) {
-      e.printStackTrace();
+    } catch (final IOException ioException) {
+      ioException.printStackTrace();
     }
   }
-
 }
