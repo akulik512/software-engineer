@@ -2,7 +2,6 @@ package com.akulik.designpatterns.command.macrocommand;
 
 import com.akulik.designpatterns.command.macrocommand.action.Command;
 import com.akulik.designpatterns.command.macrocommand.action.NoCommand;
-
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 

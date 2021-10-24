@@ -3,6 +3,7 @@ package com.akulik.lab.compare;
 import java.util.ArrayList;
 
 public class ComparableAndComparator {
+
   public static void main(String[] args) {
     // https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html
     System.out.println("-- Comparator Example");

@@ -17,6 +17,7 @@ public class Part1_1 {
   }
 
   private static class CreateListObject {
+
     private void result() {
       CreateList createList = new CreateList();
       createList.result();
@@ -25,6 +26,7 @@ public class Part1_1 {
 
     // Difference between List.of and Arrays.asList
     private static class CreateList {
+
       private void result() {
         showImmutable();
         showNull();
@@ -84,6 +86,7 @@ public class Part1_1 {
   }
 
   private static class RemoveOperationExample {
+
     private void result() {
       List<Object> list = new ArrayList<>();
       list.add(1);

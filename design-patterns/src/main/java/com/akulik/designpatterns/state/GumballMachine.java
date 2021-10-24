@@ -1,6 +1,10 @@
 package com.akulik.designpatterns.state;
 
-import com.akulik.designpatterns.state.state.*;
+import com.akulik.designpatterns.state.state.HasQuarterState;
+import com.akulik.designpatterns.state.state.NoQuarterState;
+import com.akulik.designpatterns.state.state.SoldOutState;
+import com.akulik.designpatterns.state.state.SoldState;
+import com.akulik.designpatterns.state.state.State;
 
 public class GumballMachine {
 

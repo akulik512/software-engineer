@@ -3,6 +3,7 @@ package com.akulik.ocp.module9;
 import java.util.HashMap;
 
 public class Part1_3 {
+
   public static void main(String[] args) {
     HashMap<Integer, String> map = new HashMap<>();
     map.put(1, "Hello");

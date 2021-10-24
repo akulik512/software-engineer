@@ -1,7 +1,6 @@
 package com.akulik.designpatterns.iterator.iterator;
 
 import com.akulik.designpatterns.iterator.menu.MenuItem;
-
 import java.util.ArrayList;
 
 public class LunchMenuIterator implements Iterator {

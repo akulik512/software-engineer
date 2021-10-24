@@ -34,7 +34,7 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
   @Override
   public Veggies[] createVeggies() {
-    return new Veggies[] {new BlackOlives(), new Spinach(), new Eggplant()};
+    return new Veggies[]{new BlackOlives(), new Spinach(), new Eggplant()};
   }
 
   @Override

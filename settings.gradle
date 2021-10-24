@@ -2,5 +2,4 @@ rootProject.name = 'software-engineer'
 
 include 'design-patterns'
 include 'ocp'
-include 'algorithms'
-
+include 'cses'

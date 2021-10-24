@@ -1,6 +1,12 @@
 package com.akulik.ocp.module13;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
@@ -14,13 +20,14 @@ public class Part1 {
   }
 
   private static class ConnectingStream {
+
     private void result() {
       Charset utf8 = StandardCharsets.UTF_8;
 
       try (BufferedReader in =
-              new BufferedReader(
-                  new InputStreamReader(
-                      new FileInputStream(String.format("%sthirteen_in.txt", PATH)), utf8));
+          new BufferedReader(
+              new InputStreamReader(
+                  new FileInputStream(String.format("%sthirteen_in.txt", PATH)), utf8));
           PrintWriter out =
               new PrintWriter(
                   new OutputStreamWriter(

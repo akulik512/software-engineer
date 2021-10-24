@@ -14,6 +14,7 @@ public class Part1 {
   }
 
   private static class CompoundAssignments {
+
     private void result() {
       int a = 1, b = 3;
       a += b; // equivalent of a = a + b; (a is 4)
@@ -25,6 +26,7 @@ public class Part1 {
   }
 
   private static class OperatorEvaluationOrder {
+
     private void result() {
       int a = 2, b = 3;
       int c = b - a * b; // (c is -3)
@@ -33,6 +35,7 @@ public class Part1 {
   }
 
   private static class IncrementDecrementOperators {
+
     private void result() {
       int a = 1, b = 0;
       a++; // increment (a is 2)

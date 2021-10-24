@@ -9,6 +9,7 @@ public class Part1 {
   }
 
   private static class SimpleThread {
+
     public void result() {
       Lateral lateral = new Lateral();
       new Thread(lateral).start();
@@ -19,6 +20,7 @@ public class Part1 {
   }
 
   private static class InterruptThread {
+
     public void result() {
       Runnable r =
           () -> {

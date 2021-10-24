@@ -1,6 +1,7 @@
 package com.akulik.lab.compare;
 
 public class Message {
+
   private int id;
   private String msg;
 

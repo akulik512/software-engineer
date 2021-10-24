@@ -12,6 +12,7 @@ public class Part1 {
   }
 
   private static class ArrayExample {
+
     private void result() {
       System.out.println("\n-- Play with array: ");
       String[] arr = new String[5];
@@ -36,6 +37,7 @@ public class Part1 {
   }
 
   private static class Loop {
+
     private void result() {
       // Interesting iteration case by array
       // See sum += i++

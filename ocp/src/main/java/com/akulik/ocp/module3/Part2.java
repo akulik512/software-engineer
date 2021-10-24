@@ -2,7 +2,14 @@ package com.akulik.ocp.module3;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
-import java.time.*;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Month;
+import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.Locale;
@@ -24,6 +31,7 @@ public class Part2 {
   }
 
   private static class DurationAPI {
+
     private void result() {
       LocalDate today = LocalDate.now();
       LocalDate foolsDay = LocalDate.of(2019, Month.APRIL, 1);
@@ -45,6 +53,7 @@ public class Part2 {
   }
 
   private static class ZoneAPI {
+
     private void result() {
       ZoneId london = ZoneId.of("Europe/London");
       ZoneId la = ZoneId.of("America/Los_Angeles");
@@ -59,6 +68,7 @@ public class Part2 {
   }
 
   private static class LocaleAPI {
+
     private void result() {
       // Part 1: Initialize
       // Language Country Variant
@@ -97,6 +107,7 @@ public class Part2 {
   }
 
   private static class ParseDate {
+
     private void result() {
       LocalDate date = LocalDate.of(2019, Month.APRIL, 1);
       Locale locale = new Locale("en", "GB");

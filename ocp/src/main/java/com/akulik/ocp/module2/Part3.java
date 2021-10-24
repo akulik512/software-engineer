@@ -14,6 +14,7 @@ public class Part3 {
   }
 
   private static class ConditionalOperators {
+
     private void result() {
       int a = 3, b = 2;
       boolean c = false;
@@ -64,6 +65,7 @@ public class Part3 {
    * those effects never occur.
    * */
   private static class ShortCircuitEvaluation {
+
     private void result() {
       int a = 3, b = 2;
       boolean c = false;
@@ -77,6 +79,7 @@ public class Part3 {
   }
 
   private static class SwitchEx {
+
     private void result() {
       int a = 1;
       switch (a) {

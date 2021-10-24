@@ -4,7 +4,8 @@ public class DoubleCheckedLocking {
 
   private static volatile DoubleCheckedLocking uniqueInstance;
 
-  private DoubleCheckedLocking() {}
+  private DoubleCheckedLocking() {
+  }
 
   public static DoubleCheckedLocking getInstance() {
     if (uniqueInstance == null) {

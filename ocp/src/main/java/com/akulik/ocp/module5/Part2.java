@@ -29,8 +29,9 @@ public enum Part2 {
     }
     double earthWeight = Double.parseDouble(args[0]);
     double mass = earthWeight / EARTH.surfaceGravity();
-    for (Part2 p : Part2.values())
+    for (Part2 p : Part2.values()) {
       System.out.printf("Your weight on %s is %f%n", p, p.surfaceWeight(mass));
+    }
   }
 
   private double mass() {
