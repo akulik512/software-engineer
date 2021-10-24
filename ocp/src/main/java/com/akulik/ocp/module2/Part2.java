@@ -9,6 +9,7 @@ public class Part2 {
   }
 
   private static class ArithmeticOperationsAndTypeCasting {
+
     private void result() {
       byte a = 127, b = 5;
       // byte c = a + b;      // compilation fails

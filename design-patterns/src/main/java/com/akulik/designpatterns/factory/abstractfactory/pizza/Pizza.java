@@ -6,7 +6,6 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.dough.Dough;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.pepperoni.Pepperoni;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.sauce.Sauce;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Veggies;
-
 import java.util.Arrays;
 
 public abstract class Pizza {

@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Part1_2 {
+
   public static void main(String[] args) {
     Set<String> stringSet = new HashSet<>();
     stringSet.add(null);

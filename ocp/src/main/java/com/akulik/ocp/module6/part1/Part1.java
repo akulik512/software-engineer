@@ -1,6 +1,7 @@
 package com.akulik.ocp.module6.part1;
 
 public class Part1 {
+
   public static void main(String[] args) {
     Food x1 = new Food();
     x1.toString();

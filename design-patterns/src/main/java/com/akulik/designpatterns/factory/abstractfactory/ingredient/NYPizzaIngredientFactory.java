@@ -10,7 +10,11 @@ import com.akulik.designpatterns.factory.abstractfactory.ingredient.pepperoni.Pe
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.pepperoni.SlicedPepperoni;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.sauce.MarinaraSauce;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.sauce.Sauce;
-import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.*;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Garlic;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Mushroom;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Onion;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.RedPepper;
+import com.akulik.designpatterns.factory.abstractfactory.ingredient.veggies.Veggies;
 
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
@@ -31,7 +35,7 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
   @Override
   public Veggies[] createVeggies() {
-    return new Veggies[] {new Garlic(), new Onion(), new Mushroom(), new RedPepper()};
+    return new Veggies[]{new Garlic(), new Onion(), new Mushroom(), new RedPepper()};
   }
 
   @Override

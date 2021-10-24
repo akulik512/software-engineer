@@ -1,3 +1,5 @@
 package com.akulik.designpatterns.factory.abstractfactory.ingredient.clams;
 
-public interface Clams {}
+public interface Clams {
+
+}

@@ -26,10 +26,14 @@ public class MissingNumber {
       String str = bufferedReader.readLine();
       String[] in = str.split("\\s");
 
-      for (int i = 0; i < n - 1; i++) input[Integer.parseInt(in[i])] = 1;
+      for (int i = 0; i < n - 1; i++) {
+        input[Integer.parseInt(in[i])] = 1;
+      }
 
       for (int i = 1; i < n + 1; i++) {
-        if (input[i] == 0) System.out.print(i);
+        if (input[i] == 0) {
+          System.out.print(i);
+        }
       }
     } catch (final IOException ioException) {
       ioException.printStackTrace();

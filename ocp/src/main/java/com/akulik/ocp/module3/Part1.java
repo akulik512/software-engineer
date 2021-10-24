@@ -1,6 +1,7 @@
 package com.akulik.ocp.module3;
 
 public class Part1 {
+
   public static void main(String[] args) {
     StringIndexing stringIndexing = new StringIndexing();
     stringIndexing.result();
@@ -10,6 +11,7 @@ public class Part1 {
   }
 
   private static class StringIndexing {
+
     private void result() {
       String a = "HelloWorld";
       String b = a.substring(0, 5); // b is "Hello"
@@ -24,6 +26,7 @@ public class Part1 {
   }
 
   private static class StringBuilder {
+
     private void result() {
       java.lang.StringBuilder sB = new java.lang.StringBuilder();
       sB.append("tea"); // sb is tea

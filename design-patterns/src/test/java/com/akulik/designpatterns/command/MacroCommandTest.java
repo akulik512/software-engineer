@@ -1,7 +1,14 @@
 package com.akulik.designpatterns.command;
 
 import com.akulik.designpatterns.command.macrocommand.RemoteControl;
-import com.akulik.designpatterns.command.macrocommand.action.*;
+import com.akulik.designpatterns.command.macrocommand.action.Command;
+import com.akulik.designpatterns.command.macrocommand.action.FountainOff;
+import com.akulik.designpatterns.command.macrocommand.action.FountainOn;
+import com.akulik.designpatterns.command.macrocommand.action.JacuzziOff;
+import com.akulik.designpatterns.command.macrocommand.action.JacuzziOn;
+import com.akulik.designpatterns.command.macrocommand.action.MacroCommand;
+import com.akulik.designpatterns.command.macrocommand.action.StereoOff;
+import com.akulik.designpatterns.command.macrocommand.action.StereoOn;
 import com.akulik.designpatterns.command.macrocommand.entity.Fountain;
 import com.akulik.designpatterns.command.macrocommand.entity.Jacuzzi;
 import com.akulik.designpatterns.command.macrocommand.entity.Stereo;

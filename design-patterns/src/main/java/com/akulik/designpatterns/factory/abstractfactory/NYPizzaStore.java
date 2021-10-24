@@ -2,7 +2,11 @@ package com.akulik.designpatterns.factory.abstractfactory;
 
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.NYPizzaIngredientFactory;
 import com.akulik.designpatterns.factory.abstractfactory.ingredient.PizzaIngredientFactory;
-import com.akulik.designpatterns.factory.abstractfactory.pizza.*;
+import com.akulik.designpatterns.factory.abstractfactory.pizza.CheesePizza;
+import com.akulik.designpatterns.factory.abstractfactory.pizza.ClamPizza;
+import com.akulik.designpatterns.factory.abstractfactory.pizza.PepperoniPizza;
+import com.akulik.designpatterns.factory.abstractfactory.pizza.Pizza;
+import com.akulik.designpatterns.factory.abstractfactory.pizza.VeggiePizza;
 
 public class NYPizzaStore extends PizzaStore {
 
