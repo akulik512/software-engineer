@@ -20,3 +20,8 @@ dependencies {
     implementation(libraries.jmh_core)
     implementation(libraries.jmh_generator_annprocess)
 }
+
+test {
+    useJUnitPlatform()
+}
+

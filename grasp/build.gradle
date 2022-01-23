@@ -17,8 +17,6 @@ repositories {
 dependencies {
     testImplementation(libraries.junit_jupiter_api)
     testRuntimeOnly(libraries.junit_jupiter_engine)
-    implementation(libraries.jmh_core)
-    implementation(libraries.jmh_generator_annprocess)
 }
 
 test {
