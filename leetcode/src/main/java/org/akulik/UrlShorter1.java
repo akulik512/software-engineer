@@ -1,4 +1,4 @@
-package com.akulik;
+package org.akulik;
 
 import java.util.Random;
 

@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "com.akulik"
+group = "org.akulik"
 version = "unspecified"
 
 repositories {
