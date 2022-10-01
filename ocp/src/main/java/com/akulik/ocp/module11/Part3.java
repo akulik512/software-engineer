@@ -1,13 +1,11 @@
 package com.akulik.ocp.module11;
 
 import com.akulik.lab.compare.Message;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.BenchmarkMode;
-import org.openjdk.jmh.annotations.Mode;
 
 public class Part3 {
 
@@ -25,8 +23,6 @@ public class Part3 {
     sequentialStreamTest();
   }
 
-  @Benchmark
-  @BenchmarkMode(Mode.AverageTime)
   public static void parallelStreamTest() {
     List<Message> names = new ArrayList<>();
     names.add(new Message(1, "Brest"));
@@ -36,8 +32,6 @@ public class Part3 {
     names.stream().parallel().map(Message::getId).collect(Collectors.toList());
   }
 
-  @Benchmark
-  @BenchmarkMode(Mode.AverageTime)
   public static void sequentialStreamTest() {
     List<Message> names = new ArrayList<>();
     names.add(new Message(1, "Brest"));
