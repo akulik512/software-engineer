@@ -2,13 +2,8 @@ plugins {
     id("java")
 }
 
-apply from: file("${rootDir}/gradle/dependencies.gradle")
-
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
-    }
-}
+group = "com.akulik"
+version = "unspecified"
 
 repositories {
     mavenCentral()
@@ -19,7 +14,6 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 }
 
-test {
+tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
-
