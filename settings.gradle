@@ -1,7 +1,5 @@
 rootProject.name = 'software-engineer'
 
 include 'design-patterns'
-include 'ocp'
-include 'interview'
 include 'leetcode'
 
