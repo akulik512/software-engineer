@@ -2,7 +2,7 @@ package org.akulik.leetcode;
 
 import java.util.Random;
 
-public class UrlShorter1 {
+public class UrlShorter {
 
     public static void main(String[] args) {
         StringBuilder result = new StringBuilder();
