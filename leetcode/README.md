@@ -1,3 +1,2 @@
-- Roman to Integer
-- Palindrome Linked List
-  - 
+- Roman to Integer [array, loop, Java API]
+- Palindrome Linked List [singly linked list, links]

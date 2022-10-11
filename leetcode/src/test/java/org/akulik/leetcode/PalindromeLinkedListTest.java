@@ -11,9 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PalindromeLinkedListTest {
 
-    private static final int[] PALINDROME = {1, 2, 2, 1};
-    private static final int[] ARRAY = {1, 2};
-
     private final PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
 
     private static Stream<Arguments> testData() {

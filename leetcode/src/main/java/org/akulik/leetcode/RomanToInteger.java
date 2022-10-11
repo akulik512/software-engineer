@@ -3,8 +3,8 @@ package org.akulik.leetcode;
 import java.util.Map;
 
 // 13. Roman to Integer (easy)
-// Time: O(n) - because we go from the end of the string to the beginning, only once
-// Space: O(1) - because the amount of memory does not depend on the size of the romanValue
+// Time: O(n) - we go from the end of the string to the beginning, only once
+// Space: O(1) - the amount of memory does not depend on the size of the romanValue
 // (ROMAN_TO_INTEGER_MAP size is fixed, variable sizes don't depend on the size of the romanValue and etc.)
 public class RomanToInteger {
 
