@@ -1,6 +1,0 @@
-ext.libraries = [
-        junit_jupiter_api       : 'org.junit.jupiter:junit-jupiter-api:5.8.1',
-        junit_jupiter_engine    : 'org.junit.jupiter:junit-jupiter-engine:5.8.1',
-        jmh_core                : 'org.openjdk.jmh:jmh-core:1.33',
-        jmh_generator_annprocess: 'org.openjdk.jmh:jmh-generator-annprocess:1.33'
-]

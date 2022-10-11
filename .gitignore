@@ -6,6 +6,7 @@ ocp/ocp.iml
 
 ### Gradle ###
 .gradle
+gradle
 build
 design-patterns/build
 ocp/build
