@@ -8,14 +8,27 @@ public class TwoSum {
     public int[] twoSum(final int[] nums, final int target) {
         if (nums == null || nums.length < 2) return null;
 
-        HashMap<Integer, Integer> idxByValue = new HashMap<>();
+        final HashMap<Integer, Integer> indexByValue = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            int curr = target - nums[i];
+            int complement = target - nums[i];
 
-            if (idxByValue.get(curr) != null) {
-                return new int[]{i, idxByValue.get(curr)};
+            if (indexByValue.containsKey(complement)) {
+                return new int[]{indexByValue.get(complement), i};
             }
-            idxByValue.put(nums[i], i);
+            indexByValue.put(nums[i], i);
+        }
+        return null;
+    }
+
+    public int[] twoSumBruteForce(final int[] nums, final int target) {
+        if (nums == null || nums.length < 2) return null;
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                int complement = nums[i] + nums[j];
+
+                if (target == complement) return new int[]{i, j};
+            }
         }
         return null;
     }
