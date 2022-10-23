@@ -3,3 +3,4 @@
 - Two Sum [math, array]
 - Fizz Buzz [math]
 - Ransom Note
+- Middle of the Linked List

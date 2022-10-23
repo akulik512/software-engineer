@@ -32,10 +32,9 @@ class PalindromeLinkedListTest {
 
     @ParameterizedTest
     @MethodSource("testData")
-    void isPalindrome(final ListNode listNodes, final boolean expectedResutl) {
+    void isPalindrome(ListNode listNodes, boolean expectedResult) {
         boolean result = palindromeLinkedList.isPalindrome(listNodes);
-
-        assertEquals(expectedResutl, result);
+        assertEquals(expectedResult, result);
     }
 
 }

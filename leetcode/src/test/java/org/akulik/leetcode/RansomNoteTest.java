@@ -25,7 +25,6 @@ class RansomNoteTest {
     void canConstruct(String ransom, String magazine, boolean expectedResult) {
         boolean actualResult = ransomNote.canConstruct(ransom, magazine);
         assertThat(actualResult).isEqualTo(expectedResult);
-
     }
 
 }
