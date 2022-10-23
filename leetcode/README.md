@@ -2,3 +2,4 @@
 - Palindrome Linked List [singly linked list, links]
 - Two Sum [math, array]
 - Fizz Buzz [math]
+- Ransom Note
