@@ -4,3 +4,4 @@
 - Fizz Buzz [math]
 - Ransom Note
 - Middle of the Linked List
+- Number of Steps to Reduce a Number to Zero
