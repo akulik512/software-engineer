@@ -1,4 +1,4 @@
-package org.akulik.leetcode;
+package org.akulik.leetcode.newusers;
 
 import java.util.Map;
 

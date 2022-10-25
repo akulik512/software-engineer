@@ -1,4 +1,4 @@
-package org.akulik.leetcode;
+package org.akulik.leetcode.newusers;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

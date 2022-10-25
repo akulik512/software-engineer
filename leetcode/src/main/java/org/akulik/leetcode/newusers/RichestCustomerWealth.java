@@ -1,4 +1,4 @@
-package org.akulik.leetcode;
+package org.akulik.leetcode.newusers;
 
 // 1672. Richest Customer Wealth
 // Time: O(rows*cols)
