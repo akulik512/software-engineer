@@ -33,9 +33,9 @@ class RichestCustomerWealthTest {
 
     @ParameterizedTest
     @MethodSource("testData")
-    void maximumWealth(int[][] accounts, int expectedResult) {
+    void maximumWealth(int[][] accounts, int expected) {
         int result = richestCustomerWealth.maximumWealth(accounts);
-        assertThat(result).isEqualTo(expectedResult);
+        assertThat(result).isEqualTo(expected);
     }
 
 }

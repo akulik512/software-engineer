@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class FizzBuzzTest {
 
@@ -23,8 +23,9 @@ class FizzBuzzTest {
 
     @ParameterizedTest
     @MethodSource("testData")
-    void fizzBuzz(final int target, final List<String> expectedResult) {
-        assertEquals(expectedResult, fizzBuzz.fizzBuzz(target));
+    void fizzBuzz(int range, List<String> expected) {
+        List<String> actual = fizzBuzz.fizzBuzz(range);
+        assertThat(actual).isEqualTo(expected);
     }
 
 }

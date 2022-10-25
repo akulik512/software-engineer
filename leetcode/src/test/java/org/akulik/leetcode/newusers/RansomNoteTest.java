@@ -22,9 +22,9 @@ class RansomNoteTest {
 
     @ParameterizedTest
     @MethodSource("testData")
-    void canConstruct(String ransom, String magazine, boolean expectedResult) {
-        boolean actualResult = ransomNote.canConstruct(ransom, magazine);
-        assertThat(actualResult).isEqualTo(expectedResult);
+    void canConstruct(String ransom, String magazine, boolean expected) {
+        boolean actual = ransomNote.canConstruct(ransom, magazine);
+        assertThat(actual).isEqualTo(expected);
     }
 
 }

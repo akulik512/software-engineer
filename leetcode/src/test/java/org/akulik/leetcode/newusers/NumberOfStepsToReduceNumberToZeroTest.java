@@ -22,8 +22,8 @@ class NumberOfStepsToReduceNumberToZeroTest {
 
     @ParameterizedTest
     @MethodSource("testData")
-    void numberOfSteps(int input, int expectedResult) {
-        int actualResult = numberOfStepsToReduceNumberToZero.numberOfSteps(input);
-        assertThat(actualResult).isEqualTo(expectedResult);
+    void numberOfSteps(int number, int expected) {
+        int actual = numberOfStepsToReduceNumberToZero.numberOfSteps(number);
+        assertThat(actual).isEqualTo(expected);
     }
 }
