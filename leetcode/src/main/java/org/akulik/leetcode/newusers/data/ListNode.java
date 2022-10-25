@@ -1,4 +1,4 @@
-package org.akulik.leetcode.data;
+package org.akulik.leetcode.newusers.data;
 
 public class ListNode {
 

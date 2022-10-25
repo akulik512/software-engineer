@@ -1,4 +1,4 @@
-package org.akulik.leetcode;
+package org.akulik.leetcode.newusers;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -22,9 +22,9 @@ class RomanToIntegerTest {
 
     @ParameterizedTest
     @MethodSource("testData")
-    void romanToInt(final String testData, final int expectedResult) {
-        final Integer result = romanToInteger.romanToInt(testData);
-        assertEquals(expectedResult, result);
+    void romanToInt(final String roman, final int expected) {
+        Integer actual = romanToInteger.romanToInt(roman);
+        assertEquals(expected, actual);
     }
 
 }

@@ -1,6 +1,6 @@
-package org.akulik.leetcode;
+package org.akulik.leetcode.newusers;
 
-import org.akulik.leetcode.data.ListNode;
+import org.akulik.leetcode.newusers.data.ListNode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -10,9 +10,6 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PalindromeLinkedListTest {
-
-    private static final int[] PALINDROME = {1, 2, 2, 1};
-    private static final int[] ARRAY = {1, 2};
 
     private final PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
 
@@ -35,10 +32,9 @@ class PalindromeLinkedListTest {
 
     @ParameterizedTest
     @MethodSource("testData")
-    void isPalindrome(final ListNode listNodes, final boolean expectedResutl) {
-        boolean result = palindromeLinkedList.isPalindrome(listNodes);
-
-        assertEquals(expectedResutl, result);
+    void isPalindrome(ListNode nodes, boolean expected) {
+        boolean actual = palindromeLinkedList.isPalindrome(nodes);
+        assertEquals(expected, actual);
     }
 
 }
