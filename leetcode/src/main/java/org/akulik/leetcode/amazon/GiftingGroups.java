@@ -1,4 +1,4 @@
-package org.akulik.leetcode.amazon.assessment;
+package org.akulik.leetcode.amazon;
 
 import java.util.List;
 
