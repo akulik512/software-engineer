@@ -25,6 +25,7 @@ public class OptimizingBoxWeights {
             currentWeight += highWeight;
             list.add(highWeight);
 
+
             if (currentWeight > totalWeight - currentWeight) {
                 break;
             }
