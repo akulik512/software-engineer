@@ -1,4 +1,4 @@
-# Challenges for New Users
+# New Users
 - Roman to Integer [array, loop, Java API]
 - Palindrome Linked List [singly linked list, links]
 - Two Sum [math, array]
@@ -10,6 +10,7 @@
 - Richest Customer Wealth (!)
 
 # Amazon
-## Assessment
 - Optimizing Box Weights
 - Gifting Groups
+
+# First hundred
