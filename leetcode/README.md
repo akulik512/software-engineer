@@ -10,7 +10,13 @@
 - Richest Customer Wealth (!)
 
 # Amazon
+
 - Optimizing Box Weights
 - Gifting Groups
 
-# First hundred
+# Top hundred
+
+## Easy
+
+-
+    290. Word Pattern
