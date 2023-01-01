@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class TwoSumTest {
+class GiftingGroupsSumTest {
 
     private final TwoSum twoSum = new TwoSum();
 
