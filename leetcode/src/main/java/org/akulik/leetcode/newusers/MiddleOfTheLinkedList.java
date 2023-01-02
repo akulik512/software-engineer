@@ -1,6 +1,6 @@
 package org.akulik.leetcode.newusers;
 
-import org.akulik.leetcode.newusers.data.ListNode;
+import org.akulik.leetcode.ListNode;
 
 // 876. Middle of the Linked List
 public class MiddleOfTheLinkedList {

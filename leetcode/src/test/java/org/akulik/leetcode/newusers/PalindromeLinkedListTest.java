@@ -1,6 +1,6 @@
 package org.akulik.leetcode.newusers;
 
-import org.akulik.leetcode.newusers.data.ListNode;
+import org.akulik.leetcode.ListNode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;

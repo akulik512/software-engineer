@@ -1,6 +1,6 @@
 package org.akulik.leetcode.newusers;
 
-import org.akulik.leetcode.newusers.data.ListNode;
+import org.akulik.leetcode.ListNode;
 
 // 234. Palindrome Linked List (easy)
 // Time: O(n) - the time depends only on the count of input data values
