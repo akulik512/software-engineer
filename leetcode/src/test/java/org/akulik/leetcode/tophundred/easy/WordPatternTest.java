@@ -27,5 +27,4 @@ class WordPatternTest {
         boolean result = wordPattern.wordPattern(pattern, s);
         assertThat(result).isEqualTo(expected);
     }
-
 }

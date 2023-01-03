@@ -29,5 +29,4 @@ class ValidParenthesesTest {
         boolean result = validParentheses.isValid(s);
         assertThat(result).isEqualTo(expected);
     }
-
 }

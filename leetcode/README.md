@@ -16,7 +16,12 @@
 
 # Top hundred
 
+## Algorithm
+
+- Binary Search
+
 ## Easy
+
 1. 290 Word Pattern [array, string -> hashmap]
 2. 20 Valid Parentheses [array, string -> stack]
 3. 21 Search Insert Positions [array -> Binary Search]
