@@ -17,6 +17,6 @@
 # Top hundred
 
 ## Easy
-
--
-    290. Word Pattern
+1. 290 Word Pattern [array, string -> hashmap]
+2. 20 Valid Parentheses [array, string -> stack]
+3. 21 Search Insert Positions [array -> Binary Search]
