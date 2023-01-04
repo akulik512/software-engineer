@@ -24,4 +24,5 @@
 
 1. 290 Word Pattern [array, string -> hashmap]
 2. 20 Valid Parentheses [array, string -> stack]
-3. 21 Search Insert Positions [array -> Binary Search]
+3. 35 Search Insert Positions [array -> Binary Search]
+4. 21 Merge Two Sorted Lists [linked list]
