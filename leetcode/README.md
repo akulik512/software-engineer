@@ -14,11 +14,17 @@
 - Optimizing Box Weights
 - Gifting Groups
 
-# Top hundred
+# DSA
 
 ## Algorithm
 
 - Binary Search
+
+## Data structure
+
+- 83 Remove Duplicates from Sorted List
+
+# Top liked
 
 ## Easy
 

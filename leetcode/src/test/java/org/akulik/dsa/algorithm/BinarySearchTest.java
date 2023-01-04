@@ -1,4 +1,4 @@
-package org.akulik.leetcode.algorithm;
+package org.akulik.dsa.algorithm;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

@@ -1,4 +1,4 @@
-package org.akulik.leetcode.algorithm;
+package org.akulik.dsa.algorithm;
 
 public class BinarySearch {
 
