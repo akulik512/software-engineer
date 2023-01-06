@@ -24,8 +24,7 @@ class FizzBuzzTest {
     @ParameterizedTest
     @MethodSource("testData")
     void fizzBuzz(int range, List<String> expected) {
-        List<String> actual = fizzBuzz.fizzBuzz(range);
-        assertThat(actual).isEqualTo(expected);
+        List<String> result = fizzBuzz.fizzBuzz(range);
+        assertThat(result).isEqualTo(expected);
     }
-
 }

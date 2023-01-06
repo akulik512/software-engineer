@@ -23,8 +23,8 @@ class RomanToIntegerTest {
     @ParameterizedTest
     @MethodSource("testData")
     void romanToInt(final String roman, final int expected) {
-        Integer actual = romanToInteger.romanToInt(roman);
-        assertEquals(expected, actual);
+        Integer result = romanToInteger.romanToInt(roman);
+        assertEquals(expected, result);
     }
 
 }

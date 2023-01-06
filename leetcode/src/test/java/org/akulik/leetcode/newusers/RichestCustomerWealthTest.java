@@ -37,5 +37,4 @@ class RichestCustomerWealthTest {
         int result = richestCustomerWealth.maximumWealth(accounts);
         assertThat(result).isEqualTo(expected);
     }
-
 }

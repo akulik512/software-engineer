@@ -41,8 +41,7 @@ class TheKWeakestRowsInMatrixTest {
     @ParameterizedTest
     @MethodSource("testData")
     void kWeakestRows(int[][] mat, int k, int[] expected) {
-        int[] actual = theKWeakestRowsInMatrix.kWeakestRows(mat, k);
-        assertThat(actual).isEqualTo(expected);
+        int[] result = theKWeakestRowsInMatrix.kWeakestRows(mat, k);
+        assertThat(result).isEqualTo(expected);
     }
-
 }

@@ -41,5 +41,4 @@ class GiftingGroupsSumTest {
         int[] result = twoSum.twoSumBruteForce(nums, target);
         assertArrayEquals(expected, result);
     }
-
 }

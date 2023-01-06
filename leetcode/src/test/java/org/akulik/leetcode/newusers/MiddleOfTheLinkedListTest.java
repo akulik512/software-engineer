@@ -43,8 +43,7 @@ class MiddleOfTheLinkedListTest {
     @ParameterizedTest
     @MethodSource("testData")
     void middleNode(ListNode nodes, ListNode expected) {
-        ListNode actual = middleOfTheLinkedList.middleNode(nodes);
-        assertThat(actual).usingRecursiveComparison().isEqualTo(expected);
+        ListNode result = middleOfTheLinkedList.middleNode(nodes);
+        assertThat(result).usingRecursiveComparison().isEqualTo(expected);
     }
-
 }
