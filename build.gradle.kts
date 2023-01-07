@@ -2,16 +2,17 @@ plugins {
     id("java")
 }
 
-group = "com.akulik"
-version = "unspecified"
-
 repositories {
     mavenCentral()
 }
 
+group = "com.akulik"
+
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation(libs.junit.jupiter.api)
+    testRuntimeOnly(libs.junit.jupiter.engine)
+    testImplementation(libs.junit.jupiter.params)
+    testImplementation(libs.assertj.core)
 }
 
 tasks.getByName<Test>("test") {
