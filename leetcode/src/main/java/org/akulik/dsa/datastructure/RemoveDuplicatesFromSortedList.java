@@ -1,6 +1,6 @@
 package org.akulik.dsa.datastructure;
 
-import org.akulik.leetcode.ListNode;
+import org.akulik.leetcode.lists.ListNode;
 
 public class RemoveDuplicatesFromSortedList {
 
