@@ -1,3 +1,12 @@
+# Study Plan
+
+## LeetCode 75
+
+### Level 1
+
+- 1480 Running Sum of 1d Array [Array, Prefix Sum]
+-
+
 # Lists
 
 ## New Users
