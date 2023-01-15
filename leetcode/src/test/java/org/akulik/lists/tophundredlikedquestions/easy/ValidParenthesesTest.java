@@ -1,4 +1,4 @@
-package org.akulik.lists.tophundred.easy;
+package org.akulik.lists.tophundredlikedquestions.easy;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

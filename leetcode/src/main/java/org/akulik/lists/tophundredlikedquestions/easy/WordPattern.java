@@ -1,4 +1,4 @@
-package org.akulik.lists.tophundred.easy;
+package org.akulik.lists.tophundredlikedquestions.easy;
 
 import java.util.HashMap;
 
