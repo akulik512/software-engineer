@@ -1,4 +1,4 @@
-package org.akulik.studyplan.leetcode75.level1;
+package org.akulik.studyplan.leetcode75.level1.day1;
 
 public class FindPivotIndex {
 
