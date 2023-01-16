@@ -2,10 +2,12 @@
 ## LeetCode 75
 ### Level 1
 
-| Number | Issue                   | Tags              |
-|--------|-------------------------|-------------------|
-| 1480   | Running Sum of 1d Array | Array, Prefix Sum |
-| 724    | Find Pivot Index        | Array, Prefix Sum |
+| Number | Issue                   | Tags                 |
+|--------|-------------------------|----------------------|
+| 1480   | Running Sum of 1d Array | Array, Prefix Sum    |
+| 724    | Find Pivot Index        | Array, Prefix Sum    |
+| 205    | Isomorphic Strings      | Hash Table, String   |
+| 392    | Is Subsequence          | Two Pointers, String |
 
 # Lists
 ## New Users
