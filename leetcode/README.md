@@ -1,5 +1,7 @@
 # Study Plan
+
 ## LeetCode 75
+
 ### Level 1
 
 | Number | Issue                   | Tags                 |
@@ -9,7 +11,18 @@
 | 205    | Isomorphic Strings      | Hash Table, String   |
 | 392    | Is Subsequence          | Two Pointers, String |
 
+# Learn
+
+## Array
+
+### Level 1
+
+| Issue                | Solution   |
+|----------------------|------------|
+| Max Consecutive Ones | Math.max() |
+
 # Lists
+
 ## New Users
 
 | Number | Issue                                      | Tags               |
