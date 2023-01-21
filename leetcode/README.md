@@ -17,9 +17,11 @@
 
 ### Level 1
 
-| Issue                | Solution   |
-|----------------------|------------|
-| Max Consecutive Ones | Math.max() |
+| Issue                                   | Solution     |
+|-----------------------------------------|--------------|
+| Max Consecutive Ones                    | Math.max()   |
+| Find Numbers with Even Number of Digits |              |
+| Squares of a Sorted Array               | Two pointers |
 
 # Lists
 

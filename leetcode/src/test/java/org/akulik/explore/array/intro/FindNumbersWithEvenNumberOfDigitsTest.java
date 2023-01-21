@@ -25,4 +25,11 @@ class FindNumbersWithEvenNumberOfDigitsTest {
         int result = findNumbersWithEvenNumberOfDigits.findNumbers(nums);
         assertThat(result).isEqualTo(expected);
     }
+
+    @ParameterizedTest
+    @MethodSource("testData")
+    void withoutJavaApi(int[] nums, int expected) {
+        int result = findNumbersWithEvenNumberOfDigits.withoutJavaApi(nums);
+        assertThat(result).isEqualTo(expected);
+    }
 }

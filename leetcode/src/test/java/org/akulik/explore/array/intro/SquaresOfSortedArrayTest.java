@@ -25,4 +25,11 @@ class SquaresOfSortedArrayTest {
         int[] result = squaresOfSortedArray.sortedSquares(nums);
         assertThat(result).isEqualTo(expected);
     }
+
+    @ParameterizedTest
+    @MethodSource("testData")
+    void official(int[] nums, int[] expected) {
+        int[] result = squaresOfSortedArray.official(nums);
+        assertThat(result).isEqualTo(expected);
+    }
 }
