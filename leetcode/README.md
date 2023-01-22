@@ -25,9 +25,10 @@
 
 ### Inserting
 
-| Issue           | Solution |
-|-----------------|----------|
-| Duplicate Zeros |          |
+| Issue              | Solution |
+|--------------------|----------|
+| Duplicate Zeros    |          |
+| Merge Sorted Array |          |
 
 # Lists
 
