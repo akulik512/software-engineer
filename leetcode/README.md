@@ -15,13 +15,19 @@
 
 ## Array
 
-### Level 1
+### Introduction
 
 | Issue                                   | Solution     |
 |-----------------------------------------|--------------|
 | Max Consecutive Ones                    | Math.max()   |
-| Find Numbers with Even Number of Digits |              |
+| Find Numbers with Even Number of Digits | /=           |
 | Squares of a Sorted Array               | Two pointers |
+
+### Inserting
+
+| Issue           | Solution |
+|-----------------|----------|
+| Duplicate Zeros |          |
 
 # Lists
 
