@@ -16,7 +16,10 @@ class FibonacciNumberTest {
         return Stream.of(
                 Arguments.of(2, 1),
                 Arguments.of(3, 2),
-                Arguments.of(4, 3)
+                Arguments.of(4, 3),
+                Arguments.of(8, 21),
+                Arguments.of(9, 34),
+                Arguments.of(11, 89)
         );
     }
 
@@ -24,6 +27,13 @@ class FibonacciNumberTest {
     @MethodSource("testData")
     void fib(int n, int expected) {
         int result = fibonacciNumber.fib(n);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @ParameterizedTest
+    @MethodSource("testData")
+    void fib_v2(int n, int expected) {
+        int result = fibonacciNumber.fib_v2(n);
         assertThat(result).isEqualTo(expected);
     }
 }
