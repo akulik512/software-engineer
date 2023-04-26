@@ -1,29 +1,66 @@
+# Study Plan
+
+## LeetCode 75
+
+### Level 1
+
+| Number | Issue                   | Tags                 |
+|--------|-------------------------|----------------------|
+| 1480   | Running Sum of 1d Array | Array, Prefix Sum    |
+| 724    | Find Pivot Index        | Array, Prefix Sum    |
+| 205    | Isomorphic Strings      | Hash Table, String   |
+| 392    | Is Subsequence          | Two Pointers, String |
+
+# Learn
+
+## Array
+
+### Introduction
+
+| Issue                                   | Solution     |
+|-----------------------------------------|--------------|
+| Max Consecutive Ones                    | Math.max()   |
+| Find Numbers with Even Number of Digits | /=           |
+| Squares of a Sorted Array               | Two pointers |
+
+### Inserting
+
+| Issue              | Solution |
+|--------------------|----------|
+| Duplicate Zeros    |          |
+| Merge Sorted Array |          |
+
 # Lists
 
 ## New Users
 
-- Roman to Integer [array, loop, Java API]
-- Palindrome Linked List [singly linked list, links]
-- Two Sum [math, array]
-- Fizz Buzz [math]
-- Ransom Note
-- Middle of the Linked List
-- Number of Steps to Reduce a Number to Zero
-- The K Weakest Rows in a Matrix (!)
-- Richest Customer Wealth (!)
+| Number | Issue                                      | Tags               |
+|--------|--------------------------------------------|--------------------|
+|        | Roman to Integer                           | Array              |
+|        | Palindrome Linked List                     | Singly linked list |
+|        | Two Sum                                    | Array              |
+|        | Fizz Buzz                                  | String             |
+|        | Ransom Note                                |                    |
+|        | Middle of the Linked List                  |                    |
+|        | Number of Steps to Reduce a Number to Zero |                    |
+|        | The K Weakest Rows in a Matrix (!)         |                    |
+|        | Richest Customer Wealth (!)                |                    |
 
-## Top liked
-
+## Top 100 Liked Questions
 ### Easy
 
-1. 290 Word Pattern [array, string -> hashmap]
-2. 20 Valid Parentheses [array, string -> stack]
-3. 35 Search Insert Positions [array -> Binary Search]
-4. 21 Merge Two Sorted Lists [linked list]
-5. 70 Climbing Stairs [Recursion with Memoization]
+| Number | Issue                   | Tags                       |
+|--------|-------------------------|----------------------------|
+| 290    | Word Pattern            | Array, Hashmap             |
+| 20     | Valid Parentheses       | Array, Stack               |
+| 35     | Search Insert Positions | Array, Binary Search       |
+| 21     | Merge Two Sorted Lists  | Linked List                |
+| 70     | Climbing Stairs         | Recursion with Memoization |
 
-# Interview
+# My Interview Issues
 
-- Optimizing Box Weights [Amazon]
-- Gifting Groups [Amazon]
-- Max Integer In Collection [Danske Bank]
+| Issue                     | Company Name |
+|---------------------------|--------------|
+| Optimizing Box Weights    | Amazon       |
+| Gifting Groups            | Amazon       |
+| Max Integer In Collection | Danske Bank  |
