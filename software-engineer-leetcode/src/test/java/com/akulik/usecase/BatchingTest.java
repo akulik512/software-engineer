@@ -6,12 +6,12 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class BatchServiceTest {
+class BatchingTest {
 
-    private final BatchService batchService = new BatchService();
+    private final Batching batching = new Batching();
 
     @Test
-    void testSplitIntoBatches() {
+    void testDoBatches() {
         final List<Book> books = List.of(
                 new Book("\"The Great Gatsby\" by F. Scott Fitzgerald"),
                 new Book("\"To Kill a Mockingbird\" by Harper Lee"),
@@ -51,7 +51,7 @@ class BatchServiceTest {
                 // 33
         );
 
-        final List<List<Book>> batches = batchService.splitIntoBatches(books, 10);
+        final List<List<Book>> batches = batching.doBatches(books, 10);
 
         final List<List<Book>> expectedResult = List.of(
                 List.of(
