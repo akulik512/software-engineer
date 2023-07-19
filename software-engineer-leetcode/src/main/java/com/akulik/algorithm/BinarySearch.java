@@ -1,4 +1,4 @@
-package org.akulik.dsa.algorithm;
+package com.akulik.algorithm;
 
 public class BinarySearch {
 

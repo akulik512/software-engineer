@@ -1,12 +1,11 @@
-package org.akulik.dsa.algorithm;
+package com.akulik.algorithm;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 class BinarySearchTest {
 
@@ -24,6 +23,6 @@ class BinarySearchTest {
     @MethodSource("testData")
     void binarySearch(int[] nums, int target, int expected) {
         int result = binarySearch.binarySearch(nums, target);
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 }
