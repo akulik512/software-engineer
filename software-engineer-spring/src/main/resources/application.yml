@@ -1,0 +1,14 @@
+cloud:
+  aws:
+    region:
+      static: eu-central-1
+    stack:
+      auto: false
+      enabled: false
+    credentials:
+      accessKey: XYZ
+      secretKey: ABC
+
+app:
+  aws:
+    queue: production_queue

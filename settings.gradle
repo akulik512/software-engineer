@@ -7,7 +7,7 @@ buildscript {
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
-            version("junit-version", "5.10.0-M1")
+            version("junit-version", "5.10.0-RC1")
             version("assertj-version", "3.24.2")
             version("lombok-version", "1.18.28")
 
@@ -24,3 +24,4 @@ rootProject.name = 'software-engineer'
 include 'design-patterns'
 include 'leetcode'
 include 'software-engineer-leetcode'
+include 'software-engineer-spring'
