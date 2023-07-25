@@ -1,4 +1,4 @@
-package com.akulik;
+package com.akulik.integrationtest;
 
 import com.akulik.domain.model.UserCreationEvent;
 import org.junit.jupiter.api.Test;

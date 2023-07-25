@@ -1,4 +1,4 @@
-package com.akulik;
+package com.akulik.integrationtest;
 
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.DynamicPropertyRegistry;

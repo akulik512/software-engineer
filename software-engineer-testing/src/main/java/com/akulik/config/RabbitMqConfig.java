@@ -14,38 +14,38 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMqConfig {
 
-    public static final String EXCHANGE_NAME = "ProductsExchange";
-    public static final String ROUTING_KEY = "product.price";
-    public static final String QUEUE_NAME = "product-price-changes";
+    public static final String EXCHANGE_NAME = "UsersExchange";
+    public static final String ROUTING_KEY = "user.key";
+    public static final String QUEUE_NAME = "user-topic";
 
     @Bean
-    TopicExchange exchange() {
+    public TopicExchange exchange() {
         return new TopicExchange(EXCHANGE_NAME);
     }
 
     @Bean
-    Queue productPriceQueue() {
+    public Queue productPriceQueue() {
         return new Queue(QUEUE_NAME, false);
     }
 
     @Bean
-    Binding productPriceQueueBinding(Queue productPriceQueue, TopicExchange exchange) {
+    public Binding productPriceQueueBinding(final Queue productPriceQueue,
+                                            final TopicExchange exchange) {
         return BindingBuilder.bind(productPriceQueue)
                 .to(exchange)
                 .with(ROUTING_KEY);
     }
 
     @Bean
-    public RabbitTemplate rabbitTemplate(
-            ConnectionFactory connectionFactory, ObjectMapper objectMapper) {
+    public RabbitTemplate rabbitTemplate(final ConnectionFactory connectionFactory,
+                                         final ObjectMapper objectMapper) {
         final var rabbitTemplate = new RabbitTemplate(connectionFactory);
         rabbitTemplate.setMessageConverter(producerJackson2MessageConverter(objectMapper));
         return rabbitTemplate;
     }
 
     @Bean
-    public Jackson2JsonMessageConverter producerJackson2MessageConverter(
-            ObjectMapper objectMapper) {
+    public Jackson2JsonMessageConverter producerJackson2MessageConverter(final ObjectMapper objectMapper) {
         return new Jackson2JsonMessageConverter(objectMapper);
     }
 

@@ -11,10 +11,10 @@ import static com.akulik.config.RabbitMqConfig.QUEUE_NAME;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class RabbitMqEventHandler {
+public class UserCreationEventHandler {
 
     @RabbitListener(queues = QUEUE_NAME)
-    public void handle(UserCreationEvent userCreationEvent) {
+    public void handle(final UserCreationEvent userCreationEvent) {
         log.info("Received userCreationEvent:{}: ", userCreationEvent);
     }
 
