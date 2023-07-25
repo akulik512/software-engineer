@@ -26,8 +26,10 @@ dependencies {
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.awaitility:awaitility:4.2.0")
     testImplementation("org.springframework.amqp:spring-rabbit-test")
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.testcontainers:junit-jupiter")
