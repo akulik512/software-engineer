@@ -1,0 +1,3 @@
+app:
+  mongo-db-url: "mongodb://localhost:27017/test"
+  mongo-db-name: "test"

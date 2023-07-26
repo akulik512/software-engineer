@@ -23,6 +23,8 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-amqp")
+    implementation("org.mongodb:mongodb-driver-sync:4.10.2")
+    implementation("org.springframework.data:spring-data-mongodb:4.1.2")
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
@@ -30,10 +32,11 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.awaitility:awaitility:4.2.0")
-    testImplementation("org.springframework.amqp:spring-rabbit-test")
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.testcontainers:junit-jupiter")
+    testImplementation("org.springframework.amqp:spring-rabbit-test")
     testImplementation("org.testcontainers:rabbitmq")
+    testImplementation("org.testcontainers:mongodb")
 }
 
 tasks.withType<Test> {

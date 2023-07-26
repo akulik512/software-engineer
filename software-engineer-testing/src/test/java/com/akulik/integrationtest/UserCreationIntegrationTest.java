@@ -1,6 +1,6 @@
 package com.akulik.integrationtest;
 
-import com.akulik.domain.model.UserCreationEvent;
+import com.akulik.domain.listener.model.UserCreationEvent;
 import org.junit.jupiter.api.Test;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

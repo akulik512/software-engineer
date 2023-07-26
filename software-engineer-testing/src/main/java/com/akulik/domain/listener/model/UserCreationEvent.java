@@ -1,4 +1,4 @@
-package com.akulik.domain.model;
+package com.akulik.domain.listener.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
