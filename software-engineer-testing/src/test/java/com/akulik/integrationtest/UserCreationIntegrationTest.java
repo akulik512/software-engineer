@@ -19,8 +19,8 @@ class UserCreationIntegrationTest extends AbstractIntegrationTest {
     void shouldCreateUser() throws InterruptedException {
         final UserCreationEvent event = new UserCreationEvent()
                 .setId(1)
-                .setFirstname("Andrei")
-                .setSurname("Kulik");
+                .setFirstname("Bruce")
+                .setSurname("Wayne");
 
         rabbitTemplate.convertAndSend(EXCHANGE_NAME, ROUTING_KEY, event);
 
