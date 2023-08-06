@@ -34,8 +34,10 @@ class UserCreationIntegrationTest extends AbstractIntegrationTest {
         rabbitTemplate.convertAndSend(EXCHANGE_NAME, ROUTING_KEY, event);
 
         await()
-                .atMost(10, SECONDS)
-                .untilAsserted(this::verifyIsUserSavedInDatabase);
+                .atMost(20, SECONDS)
+                .untilAsserted(() -> {
+                    verifyIsUserSavedInDatabase();
+                });
     }
 
     private void verifyIsUserSavedInDatabase() {

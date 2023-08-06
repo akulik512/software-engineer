@@ -3,3 +3,14 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/test
       database: test
+
+  cloud:
+    aws:
+      credentials:
+        access-key: ABC
+        secret-key: XYZ
+      region:
+        static: eu-central-1
+
+app:
+  bucket-name: greetings-bucket
