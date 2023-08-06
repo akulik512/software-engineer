@@ -1,3 +1,5 @@
-app:
-  mongo-db-url: "mongodb://localhost:27017/test"
-  mongo-db-name: "test"
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+      database: test

@@ -1,7 +1,5 @@
 package com.akulik.config;
 
-import com.mongodb.ConnectionString;
-import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,24 +12,17 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EnableMongoRepositories(basePackages = "com.akulik")
 public class MongoDbConfig {
 
-    @Value("${app.mongo-db-url}")
-    private String mongoDbUrl;
-    @Value("${app.mongo-db-name}")
-    private String mongoDbName;
-
     @Bean
-    public MongoClient mongo() {
-        ConnectionString connectionString = new ConnectionString(mongoDbUrl);
-        MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
-                .applyConnectionString(connectionString)
-                .build();
-
-        return MongoClients.create(mongoClientSettings);
+    public MongoClient mongoClient(final @Value("${spring.data.mongodb.uri}") String url) {
+        return MongoClients.create(url);
     }
 
     @Bean
-    public MongoTemplate mongoTemplate() {
-        return new MongoTemplate(mongo(), mongoDbName);
+    public MongoTemplate mongoTemplate(final MongoClient mongo,
+                                       final @Value("${spring.data.mongodb.database}") String databaseName) {
+        final MongoTemplate mongoTemplate = new MongoTemplate(mongo, databaseName);
+        mongoTemplate.createCollection("users");
+        return mongoTemplate;
     }
 
 }

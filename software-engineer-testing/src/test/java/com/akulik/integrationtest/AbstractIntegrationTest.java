@@ -11,7 +11,7 @@ import org.testcontainers.utility.DockerImageName;
 
 @SpringBootTest
 @Testcontainers
-public class AbstractIntegrationTest {
+public abstract class AbstractIntegrationTest {
 
     @Container
     static final RabbitMQContainer rabbitMq =
@@ -19,7 +19,7 @@ public class AbstractIntegrationTest {
 
     @Container
     static final MongoDBContainer mongoDb =
-            new MongoDBContainer(DockerImageName.parse("mongo:4.0.10"));
+            new MongoDBContainer(DockerImageName.parse("mongo:5.0.19"));
 
     @DynamicPropertySource
     static void overridePropertiesInternal(DynamicPropertyRegistry registry) {
@@ -28,9 +28,7 @@ public class AbstractIntegrationTest {
         registry.add("spring.rabbitmq.username", rabbitMq::getAdminUsername);
         registry.add("spring.rabbitmq.password", rabbitMq::getAdminPassword);
 
-//        registry.add("app.mongo-db-url", () -> mongoDb.getReplicaSetUrl("test"));
-        registry.add("spring.data.mongodb.host", mongoDb::getHost);
-        registry.add("spring.data.mongodb.port", mongoDb::getFirstMappedPort);
+        registry.add("spring.data.mongodb.uri", () -> mongoDb.getReplicaSetUrl("test"));
     }
 
 }
