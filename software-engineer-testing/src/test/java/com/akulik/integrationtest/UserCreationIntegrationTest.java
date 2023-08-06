@@ -35,10 +35,10 @@ class UserCreationIntegrationTest extends AbstractIntegrationTest {
 
         await()
                 .atMost(10, SECONDS)
-                .untilAsserted(this::verifySavingResult);
+                .untilAsserted(this::verifyIsUserSavedInDatabase);
     }
 
-    private void verifySavingResult() {
+    private void verifyIsUserSavedInDatabase() {
         final UserEntity expectedUserEntity = new UserEntity()
                 .setId(1)
                 .setFirstname("Bruce")

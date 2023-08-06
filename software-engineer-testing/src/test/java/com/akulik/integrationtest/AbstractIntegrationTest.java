@@ -14,21 +14,21 @@ import org.testcontainers.utility.DockerImageName;
 public abstract class AbstractIntegrationTest {
 
     @Container
-    static final RabbitMQContainer rabbitMq =
+    private static final RabbitMQContainer RABBIT_MQ =
             new RabbitMQContainer(DockerImageName.parse("rabbitmq:3.12.2-alpine"));
 
     @Container
-    static final MongoDBContainer mongoDb =
+    private static final MongoDBContainer MONGO_DB =
             new MongoDBContainer(DockerImageName.parse("mongo:5.0.19"));
 
     @DynamicPropertySource
-    static void overridePropertiesInternal(DynamicPropertyRegistry registry) {
-        registry.add("spring.rabbitmq.host", rabbitMq::getHost);
-        registry.add("spring.rabbitmq.port", rabbitMq::getAmqpPort);
-        registry.add("spring.rabbitmq.username", rabbitMq::getAdminUsername);
-        registry.add("spring.rabbitmq.password", rabbitMq::getAdminPassword);
+    static void overrideApplicationProperties(final DynamicPropertyRegistry registry) {
+        registry.add("spring.rabbitmq.host", RABBIT_MQ::getHost);
+        registry.add("spring.rabbitmq.port", RABBIT_MQ::getAmqpPort);
+        registry.add("spring.rabbitmq.username", RABBIT_MQ::getAdminUsername);
+        registry.add("spring.rabbitmq.password", RABBIT_MQ::getAdminPassword);
 
-        registry.add("spring.data.mongodb.uri", () -> mongoDb.getReplicaSetUrl("test"));
+        registry.add("spring.data.mongodb.uri", () -> MONGO_DB.getReplicaSetUrl("test"));
     }
 
 }
