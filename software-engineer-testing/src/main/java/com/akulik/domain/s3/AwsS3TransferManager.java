@@ -5,42 +5,46 @@ import io.awspring.cloud.s3.S3Template;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StreamUtils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 @Service
 @RequiredArgsConstructor
 public class AwsS3TransferManager {
 
-    private final S3Template s3Client;
     @Value("${app.bucket-name}")
     private String bucketName;
 
+    private static final String FILE_KEY = "greetings";
+
+    private final S3Template s3Client;
+
     public void uploadFile() {
-        InputStream is = null;
+        InputStream inputStream = null;
         try {
-            is = new FileInputStream("/Users/akulik/IdeaProjects/software-engineer/software-engineer-testing/src/main/resources/text.txt");
+            inputStream = new FileInputStream("/Users/akulik/IdeaProjects/software-engineer/software-engineer-testing/src/main/resources/text.txt");
         } catch (final FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-        s3Client.upload(bucketName, "greetings", is);
-        readFile();
+        s3Client.store(bucketName, FILE_KEY, inputStream);
     }
 
-    public void readFile() {
-        S3Resource s3Resource = s3Client.download(bucketName, "greetings");
+    public String readFile() {
+        S3Resource s3Resource = s3Client.download(bucketName, FILE_KEY);
 
         String fileContent = null;
         try {
-            fileContent = s3Resource.getFile().getAbsolutePath();
+            fileContent = StreamUtils.copyToString(s3Resource.getInputStream(), StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        System.out.println("#### " + fileContent);
+        return fileContent;
     }
 
 }

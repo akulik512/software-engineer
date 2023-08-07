@@ -6,9 +6,6 @@ spring:
 
   cloud:
     aws:
-      credentials:
-        access-key: ABC
-        secret-key: XYZ
       region:
         static: eu-central-1
 

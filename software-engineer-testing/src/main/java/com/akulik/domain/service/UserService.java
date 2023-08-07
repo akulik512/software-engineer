@@ -27,8 +27,6 @@ public class UserService {
 
         awsS3TransferManager.uploadFile();
         log.info("The user's greeting is loaded");
-
-        awsS3TransferManager.readFile();
     }
 
 }
