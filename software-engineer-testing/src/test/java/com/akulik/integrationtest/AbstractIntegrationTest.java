@@ -36,6 +36,7 @@ public abstract class AbstractIntegrationTest {
 
     @BeforeAll
     static void beforeAll() throws IOException, InterruptedException {
+        LOCAL_STACK.execInContainer("awslocal", "s3api", "create-bucket", "--bucket " + BUCKET_NAME);
         LOCAL_STACK.execInContainer("awslocal", "s3", "mb", "s3://" + BUCKET_NAME);
     }
 
@@ -50,6 +51,8 @@ public abstract class AbstractIntegrationTest {
         registry.add("spring.data.mongodb.uri", () -> MONGO_DB.getReplicaSetUrl("test"));
 
         registry.add("spring.cloud.aws.s3.endpoint", () -> LOCAL_STACK.getEndpointOverride(S3));
+        registry.add("spring.cloud.aws.s3.region", LOCAL_STACK::getRegion);
+        registry.add("spring.cloud.aws.region.static", LOCAL_STACK::getRegion);
         registry.add("spring.cloud.aws.credentials.access-key", LOCAL_STACK::getAccessKey);
         registry.add("spring.cloud.aws.credentials.secret-key", LOCAL_STACK::getSecretKey);
         registry.add("app.bucket-name", () -> BUCKET_NAME);

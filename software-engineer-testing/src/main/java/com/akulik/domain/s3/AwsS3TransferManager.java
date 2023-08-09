@@ -12,7 +12,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-
 @Service
 @RequiredArgsConstructor
 public class AwsS3TransferManager {
@@ -27,7 +26,7 @@ public class AwsS3TransferManager {
     public void uploadFile() {
         InputStream inputStream = null;
         try {
-            inputStream = new FileInputStream("/Users/akulik/IdeaProjects/software-engineer/software-engineer-testing/src/main/resources/text.txt");
+            inputStream = new FileInputStream("text.txt");
         } catch (final FileNotFoundException e) {
             throw new RuntimeException(e);
         }
