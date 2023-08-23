@@ -19,7 +19,7 @@ import static org.testcontainers.containers.localstack.LocalStackContainer.Servi
 @SpringBootTest
 public abstract class AbstractIntegrationTest {
 
-    private static final String BUCKET_NAME = "greetings-test-bucket";
+    private static final String BUCKET_NAME = "register-bucket";
 
     @Container
     private static final RabbitMQContainer RABBIT_MQ =
@@ -55,7 +55,6 @@ public abstract class AbstractIntegrationTest {
         registry.add("spring.cloud.aws.region.static", LOCAL_STACK::getRegion);
         registry.add("spring.cloud.aws.credentials.access-key", LOCAL_STACK::getAccessKey);
         registry.add("spring.cloud.aws.credentials.secret-key", LOCAL_STACK::getSecretKey);
-        registry.add("app.bucket-name", () -> BUCKET_NAME);
     }
 
 }

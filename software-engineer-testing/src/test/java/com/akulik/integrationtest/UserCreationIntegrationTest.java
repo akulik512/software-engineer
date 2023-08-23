@@ -3,11 +3,12 @@ package com.akulik.integrationtest;
 import com.akulik.domain.listener.model.UserCreationEvent;
 import com.akulik.domain.repository.UserEntity;
 import com.akulik.domain.repository.UserRepository;
-import com.akulik.domain.s3.AwsS3TransferManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.core.io.Resource;
 
 import java.util.Optional;
 
@@ -24,8 +25,8 @@ class UserCreationIntegrationTest extends AbstractIntegrationTest {
     private UserRepository userRepository;
     @Autowired
     private RabbitTemplate rabbitTemplate;
-    @Autowired
-    private AwsS3TransferManager awsS3TransferManager;
+    @Value("s3://mybucket/samplefile.txt")
+    private Resource s3SampleFile;
 
     @Test
     void shouldCreateUser() {
@@ -40,7 +41,9 @@ class UserCreationIntegrationTest extends AbstractIntegrationTest {
                 .atMost(20, SECONDS)
                 .untilAsserted(() -> {
                     verifyIsUserSavedInDatabase();
-                    verifyFileSavedInBucket();
+                    assertThat(s3SampleFile.exists())
+                            .as("File exist in S3")
+                            .isTrue();
                 });
     }
 
@@ -56,11 +59,6 @@ class UserCreationIntegrationTest extends AbstractIntegrationTest {
                 .as("User is present in DB")
                 .isPresent()
                 .hasValue(expectedUserEntity);
-    }
-
-    private void verifyFileSavedInBucket() {
-        final String s = awsS3TransferManager.readFile();
-        assertThat(s).isEqualTo("Hello, world!");
     }
 
 

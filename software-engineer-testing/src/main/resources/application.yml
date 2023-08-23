@@ -14,6 +14,3 @@ spring:
         secret-key: none
       region:
         static: eu-central-1
-
-app:
-  bucket-name: greetings-bucket
