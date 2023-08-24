@@ -25,7 +25,7 @@ class UserCreationIntegrationTest extends AbstractIntegrationTest {
     private UserRepository userRepository;
     @Autowired
     private RabbitTemplate rabbitTemplate;
-    @Value("s3://mybucket/samplefile.txt")
+    @Value("s3://register-bucket/samplefile.txt")
     private Resource s3SampleFile;
 
     @Test

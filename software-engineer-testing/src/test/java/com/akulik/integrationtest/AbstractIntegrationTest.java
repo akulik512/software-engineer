@@ -36,8 +36,10 @@ public abstract class AbstractIntegrationTest {
 
     @BeforeAll
     static void beforeAll() throws IOException, InterruptedException {
-        LOCAL_STACK.execInContainer("awslocal", "s3api", "create-bucket", "--bucket " + BUCKET_NAME);
         LOCAL_STACK.execInContainer("awslocal", "s3", "mb", "s3://" + BUCKET_NAME);
+        LOCAL_STACK.execInContainer("awslocal", "s3", "cp",
+                "//Users/akulik/IdeaProjects/software-engineer/software-engineer-testing/src/main/resources/samplefile.txt " +
+                        "s3://" + BUCKET_NAME);
     }
 
 
