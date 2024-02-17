@@ -5,7 +5,6 @@ import java.util.LinkedList;
 public class LinkedListDemo {
 
     public static void main(String[] args) {
-
         //creating linkedList
         LinkedList l = new LinkedList();
 
@@ -33,8 +32,6 @@ public class LinkedListDemo {
         //to add element at first position
         l.addFirst(1);
         System.out.println(l);
-
-
     }
 
 }

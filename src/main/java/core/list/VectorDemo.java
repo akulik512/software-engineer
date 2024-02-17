@@ -5,7 +5,6 @@ import java.util.Vector;
 public class VectorDemo {
 
     public static void main(String[] args) {
-
         //creating vector
         Vector v = new Vector();
 

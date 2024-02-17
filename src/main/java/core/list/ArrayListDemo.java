@@ -32,7 +32,6 @@ public class ArrayListDemo {
 
         //creating ArrayList using generics
         ArrayList<String> strList = new ArrayList<String>();
-
     }
 
 }
