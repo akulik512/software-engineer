@@ -1,6 +1,7 @@
 package core.set;
 
 public class Employee implements Comparable {
+
     private String name;
     private int salary;
 

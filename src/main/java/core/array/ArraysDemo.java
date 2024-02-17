@@ -1,6 +1,6 @@
 package core.array;
 
-public class ArraysDemo3 {
+public class ArraysDemo {
 
     public static void main(String[] args) {
         //declaration

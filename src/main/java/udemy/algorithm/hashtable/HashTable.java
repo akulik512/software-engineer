@@ -26,8 +26,11 @@ class HashTable {
         System.out.println("Value for key3: " + hashtable.get("key3"));
         System.out.println("Value for non-existent key: " + hashtable.get("nonexistent"));
 
-        System.out.println("Does algorithm.hashtable contain key2? " + hashtable.containsKey("key2"));
-        System.out.println("Does algorithm.hashtable contain nonexistent key? " + hashtable.containsKey("nonexistent"));
+        System.out.println(
+                "Does algorithm.hashtable contain key2? " + hashtable.containsKey("key2"));
+        System.out.println(
+                "Does algorithm.hashtable contain nonexistent key? " + hashtable.containsKey(
+                        "nonexistent"));
     }
 
     private int hashFunction(String key) {

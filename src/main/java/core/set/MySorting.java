@@ -10,12 +10,14 @@ public class MySorting implements Comparator {
         Integer d1 = (Integer) o1;
         Integer d2 = (Integer) o2;
 
-        if (d1 < d2)
+        if (d1 < d2) {
             return +1;
-        if (d1 > d2)
+        }
+        if (d1 > d2) {
             return -1;
-        else
+        } else {
             return 0;
+    }
     }
 
 }

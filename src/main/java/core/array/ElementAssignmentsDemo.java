@@ -1,6 +1,6 @@
 package core.array;
 
-public class ElementAssignmentsDemo6 {
+public class ElementAssignmentsDemo {
 
     public static void main(String[] args) {
         //Primitive array: holding boolean, byte, char, short, long, int, float, double

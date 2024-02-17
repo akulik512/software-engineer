@@ -1,6 +1,6 @@
 package core.array;
 
-public class AnonymousArrays8 {
+public class AnonymousArrays {
 
     public static void main(String[] args) {
 

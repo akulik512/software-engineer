@@ -7,7 +7,6 @@ import java.util.Vector;
 public class CursorsEnumDemo {
 
     public static void main(String[] args) {
-
         Vector v = new Vector();
 
         System.out.println("Enter the elements :");
@@ -33,4 +32,5 @@ public class CursorsEnumDemo {
             }
         }
     }
+
 }

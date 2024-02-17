@@ -1,6 +1,10 @@
 package core.queue;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class PriorityQueueDemo {
 
@@ -16,7 +20,6 @@ public class PriorityQueueDemo {
 
         //creating priorityQueue with initial capacity and comparator object
         //PriorityQueue pq2 = new PriorityQueue(int initialCapacity,Comparator c);
-
 
         SortedSet s = new TreeSet();
         //creating priorityQueue equivalent to sortedSet s

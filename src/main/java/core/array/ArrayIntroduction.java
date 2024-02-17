@@ -1,6 +1,6 @@
 package core.array;
 
-public class ArrayIntroduction1 {
+public class ArrayIntroduction {
 
     public static void main(String[] args) {
         int[] x = new int[1000];
