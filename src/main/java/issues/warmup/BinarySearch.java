@@ -2,6 +2,10 @@ package issues.warmup;
 
 public class BinarySearch {
 
+  /*
+   * Find the value in array as fast as it possible.
+   * Save CPU operations.
+   * */
   static boolean exists(int[] ints, int k) {
     int left = 0;
     int right = ints.length - 1;
