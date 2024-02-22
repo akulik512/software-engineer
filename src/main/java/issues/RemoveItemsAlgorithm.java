@@ -1,7 +1,6 @@
 package issues;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class RemoveItemsAlgorithm {
@@ -13,12 +12,9 @@ public class RemoveItemsAlgorithm {
     for (String str1 : listA) {
       String reversedValue = new StringBuilder(str1).reverse().toString();
 
-      Iterator<String> iteratorB = listB.iterator();
-      while (iteratorB.hasNext()) {
-        String str2 = iteratorB.next();
+      for (String str2 : listB) {
         if (str2.equals(reversedValue)) {
           listBItems.add(str2);
-          iteratorB.remove();
         }
       }
     }
@@ -26,12 +22,9 @@ public class RemoveItemsAlgorithm {
     for (String str1 : listB) {
       String reversedValue = new StringBuilder(str1).reverse().toString();
 
-      Iterator<String> iteratorA = listA.iterator();
-      while (iteratorA.hasNext()) {
-        String str2 = iteratorA.next();
+      for (String str2 : listA) {
         if (str2.equals(reversedValue)) {
           listAItems.add(str2);
-          iteratorA.remove();
         }
       }
     }
