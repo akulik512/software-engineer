@@ -5,6 +5,7 @@ public class BinarySearch {
   /*
    * Find the value in array as fast as it possible.
    * Save CPU operations.
+   * Time complexity: O(log n)
    * */
   static boolean exists(int[] ints, int k) {
     int left = 0;

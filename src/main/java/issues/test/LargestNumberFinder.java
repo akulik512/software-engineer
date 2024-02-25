@@ -1,4 +1,4 @@
-package issues;
+package issues.test;
 
 public class LargestNumberFinder {
 

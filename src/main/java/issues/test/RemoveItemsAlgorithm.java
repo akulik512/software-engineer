@@ -1,4 +1,4 @@
-package issues;
+package issues.test;
 
 import java.util.ArrayList;
 import java.util.List;
