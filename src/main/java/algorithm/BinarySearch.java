@@ -1,4 +1,4 @@
-package udemy.algorithm.binarysearch;
+package algorithm;
 
 public class BinarySearch {
 

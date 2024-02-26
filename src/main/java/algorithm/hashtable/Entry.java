@@ -1,4 +1,4 @@
-package udemy.algorithm.hashtable;
+package algorithm.hashtable;
 
 public class Entry {
 

@@ -1,4 +1,4 @@
-package issues.test.tree;
+package test.question.tree;
 
 import java.util.Stack;
 

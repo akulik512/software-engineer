@@ -1,4 +1,4 @@
-package issues.warmup;
+package test.warmup;
 
 public class BinarySearch {
 
