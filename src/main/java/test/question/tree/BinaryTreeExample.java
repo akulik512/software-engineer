@@ -3,7 +3,6 @@ package test.question.tree;
 public class BinaryTreeExample {
 
   public static void main(String[] args) {
-    // Example usage with a small tree
     Node small = new Node(10);
     small.left = new Node(5);
     small.right = new Node(15);
@@ -19,7 +18,6 @@ public class BinaryTreeExample {
       System.out.println("Node with value 8 not found.");
     }
 
-    // Example usage with a large tree (height 100,000)
     Node large = constructLargeTree(0, 100000);
 
     Node resultLarge = large.find(99999);
@@ -31,7 +29,6 @@ public class BinaryTreeExample {
     }
   }
 
-  // Helper method to construct a large tree for testing
   private static Node constructLargeTree(int start, int end) {
     if (start > end) {
       return null;

@@ -4,7 +4,7 @@ public class LargestNumberFinder {
 
   public static int findLargest(int[] numbers) {
     if (numbers == null || numbers.length == 0) {
-      throw new IllegalArgumentException("Input array must not be empty.");
+      throw new IllegalArgumentException("Input array must not be empty");
     }
 
     int largest = numbers[0];

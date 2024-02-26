@@ -6,15 +6,15 @@ import java.util.List;
 public class RemoveItemsAlgorithm {
 
   private static void removeReversed(List<String> listA, List<String> listB) {
-    List<String> listAItems = new ArrayList<>();
-    List<String> listBItems = new ArrayList<>();
+    List<String> listAItemsForRemoving = new ArrayList<>();
+    List<String> listBItemsForRemoving = new ArrayList<>();
 
     for (String str1 : listA) {
       String reversedValue = new StringBuilder(str1).reverse().toString();
 
       for (String str2 : listB) {
         if (str2.equals(reversedValue)) {
-          listBItems.add(str2);
+          listBItemsForRemoving.add(str2);
         }
       }
     }
@@ -24,13 +24,13 @@ public class RemoveItemsAlgorithm {
 
       for (String str2 : listA) {
         if (str2.equals(reversedValue)) {
-          listAItems.add(str2);
+          listAItemsForRemoving.add(str2);
         }
       }
     }
 
-    listA.removeAll(listAItems);
-    listB.removeAll(listBItems);
+    listA.removeAll(listAItemsForRemoving);
+    listB.removeAll(listBItemsForRemoving);
   }
 
   public static void main(String[] args) {

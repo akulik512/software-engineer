@@ -11,7 +11,6 @@ public class Node {
     this.value = value;
   }
 
-  // New method to find a node with a specific value iteratively
   public Node find(int v) {
     Node current = this;
     Stack<Node> stack = new Stack<>();
@@ -25,12 +24,12 @@ public class Node {
       current = stack.pop();
 
       if (v == current.value) {
-        return current; // Found the node with the given value
+        return current;
       }
 
       current = current.right;
     }
 
-    return null; // Node with the given value not found
+    return null;
   }
 }
